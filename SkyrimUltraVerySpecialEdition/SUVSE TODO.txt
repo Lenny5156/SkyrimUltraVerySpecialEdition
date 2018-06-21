@@ -5,7 +5,7 @@ Save:
 Quest: Unbound
 Map: Helgen to Riverwood
 Mechanics: Combat
-Menu: Map, Options, Inventory
+Menu: Map, Options, Inventory, Artificial loading screens
 
 
 
