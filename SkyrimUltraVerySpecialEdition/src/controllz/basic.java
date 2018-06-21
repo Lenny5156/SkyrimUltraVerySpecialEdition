@@ -10,7 +10,7 @@ public abstract class basic {
 	public static void wait(int time) {
 		try {
 			Thread.sleep(time);
-		} catch (InterruptedException e) {
+		} catch (InterruptedException e) { 
 			output(":(");
 			output("We are very sorry but the programm crashed trying to wait");
 			e.printStackTrace();

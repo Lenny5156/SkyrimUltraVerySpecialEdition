@@ -8,7 +8,7 @@ public class SkyrimSuperVerySpecialEdition extends basic {
 	static Pictures p = new Pictures();
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		intro();
+		intro(); 
 		
 
 		
