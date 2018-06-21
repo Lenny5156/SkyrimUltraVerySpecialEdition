@@ -10,7 +10,7 @@ Roundbased
 Inventory
 ---------------------------------------------------
 Armor
-Sword, Great-Swords, Axes, Dagger, Bow
+Sword, Great-Swords, Axes, Dagger, Bow & Arrows
 Food
 Potions
 
@@ -19,14 +19,14 @@ Save
 ---------------------------------------------------
 Being albe to save the game and load it
 Save Quests
-Quicksave
+Quicksave & Quickload
 
 
 Quests
 ---------------------------------------------------
 Mainquest
 Some Sidequests
-~DLCS (Dawnguard, Dragenborn)
+~DLCS (Dawnguard, Dragonborn)
 
 
 Map
