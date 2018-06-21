@@ -1,0 +1,63 @@
+TODO:
+
+Combat
+---------------------------------------------------
+Enemies
+Roundbased
+
+
+
+Inventory
+---------------------------------------------------
+Armor
+Sword, Great-Swords, Axes, Dagger, Bow
+Food
+Potions
+
+
+Save
+---------------------------------------------------
+Being albe to save the game and load it
+Save Quests
+Quicksave
+
+
+Quests
+---------------------------------------------------
+Mainquest
+Some Sidequests
+~DLCS (Dawnguard, Dragenborn)
+
+
+Map
+---------------------------------------------------
+Cities (Helgen, Riverwood, Whiterun)
+Caves
+Dungeons
+
+
+Perk Trees
+---------------------------------------------------
+
+
+
+Mechanics
+---------------------------------------------------
+Cooking
+Trading
+Pickpocket
+
+
+Lockpicking
+---------------------------------------------------
+The lock is a code made of numbers.
+The length and amount of different numbers depends on the difficulty
+For example
+Novice [0-3]:
+---	There are 3 Digits to find out
+111	Is the input of the player
+
+1--	He got 1 digit Right which is now shown
+122	Second input of the player
+
+122	He got every digit now right and the lock is now open
