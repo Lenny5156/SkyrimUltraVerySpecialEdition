@@ -2,7 +2,7 @@ package controllz;
 
 import java.util.Scanner;
 
-import mooddle.Pictures;
+import data.Pictures;
 
 public class SkyrimSuperVerySpecialEdition {
 	static Pictures p = new Pictures();

@@ -1,0 +1,7 @@
+package quests.main;
+
+import quests.Quest;
+
+public class Unbound extends Quest{
+
+}

@@ -1,4 +1,4 @@
-package mooddle;
+package data;
 
 public class Pictures {
 	public static String logo = "                                                                                                                                                      \r\n" + 
