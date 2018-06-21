@@ -68,8 +68,8 @@ public class SkyrimSuperVerySpecialEdition extends basic {
 	private static void showCredits() {
 		String creditsText = 
 			"This game was developed by: \n" +
-			"Lenny Johner				 \n" + 
-			"Marcel Pfeuti				 \n" + 
+			"Lenny5156					 \n" + 
+			"MC2BP						 \n" + 
 			"							 \n" +
 			"Thank you for playing this Game. \n\n" +
 			"You can support our work via [No option yet]";
