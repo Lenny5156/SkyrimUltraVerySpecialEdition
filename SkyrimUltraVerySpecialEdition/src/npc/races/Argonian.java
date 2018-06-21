@@ -1,5 +1,7 @@
 package npc.races;
 
-public abstract class Argonian {
+import npc.Person;
+
+public abstract class Argonian extends Person {
 
 }

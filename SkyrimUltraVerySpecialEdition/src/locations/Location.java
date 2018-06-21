@@ -1,5 +1,5 @@
 package locations;
 
-public class Location {
-
+public abstract class Location {
+	public static String locationName;
 }

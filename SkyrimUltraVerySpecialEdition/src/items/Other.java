@@ -1,5 +1,5 @@
 package items;
 
-public class Other {
+public abstract class Other extends Item{
 
 }

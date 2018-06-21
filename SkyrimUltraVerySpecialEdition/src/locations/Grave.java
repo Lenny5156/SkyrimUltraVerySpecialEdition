@@ -1,5 +1,5 @@
 package locations;
 
-public class Grave {
+public class Grave extends Location {
 
 }

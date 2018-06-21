@@ -1,5 +1,5 @@
 package items;
 
-public class Food {
-
+public abstract class Food extends Item {
+	
 }

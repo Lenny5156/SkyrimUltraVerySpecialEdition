@@ -1,5 +1,7 @@
 package npc.races;
 
-public abstract class Nord {
+import npc.Person;
+
+public abstract class Nord extends Person {
 
 }

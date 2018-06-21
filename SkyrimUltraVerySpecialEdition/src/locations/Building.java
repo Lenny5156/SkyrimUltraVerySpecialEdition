@@ -1,5 +1,5 @@
 package locations;
 
-public class Building {
+public class Building extends Location {
 
 }

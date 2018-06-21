@@ -1,5 +1,5 @@
 package items;
 
-public class Key {
-
+public abstract class Key extends Item {
+	public static int doorID;
 }

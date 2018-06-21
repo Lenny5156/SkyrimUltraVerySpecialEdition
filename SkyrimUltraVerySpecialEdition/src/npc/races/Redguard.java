@@ -1,5 +1,7 @@
 package npc.races;
 
-public abstract class Redguard {
+import npc.Person;
+
+public abstract class Redguard extends Person {
 
 }

@@ -1,5 +1,7 @@
 package npc.races;
 
-public abstract class WoodElve {
+import npc.Person;
+
+public abstract class WoodElve extends Person {
 
 }

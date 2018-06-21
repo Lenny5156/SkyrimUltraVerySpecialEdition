@@ -1,5 +1,7 @@
 package npc.races;
 
-public abstract class Emperial {
+import npc.Person;
+
+public abstract class Emperial extends Person 	{
 
 }

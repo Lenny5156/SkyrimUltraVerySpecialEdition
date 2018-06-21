@@ -1,5 +1,5 @@
 package locations;
 
-public class City {
+public class City extends Location {
 
 }

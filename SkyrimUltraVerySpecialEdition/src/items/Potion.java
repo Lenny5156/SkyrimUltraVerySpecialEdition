@@ -1,5 +1,5 @@
 package items;
 
-public class Potion {
+public abstract class Potion extends Item {
 
 }

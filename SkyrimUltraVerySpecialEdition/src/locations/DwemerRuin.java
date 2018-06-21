@@ -1,5 +1,5 @@
 package locations;
 
-public class DwemerRuin {
+public class DwemerRuin extends Location {
 
 }

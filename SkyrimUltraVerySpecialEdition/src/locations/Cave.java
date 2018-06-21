@@ -1,5 +1,5 @@
 package locations;
 
-public class Cave {
+public class Cave extends Location {
 
 }

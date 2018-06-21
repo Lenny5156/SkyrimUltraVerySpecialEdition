@@ -1,5 +1,7 @@
 package npc.races;
 
-public abstract class Khajiit {
+import npc.Person;
+
+public abstract class Khajiit extends Person {
 
 }

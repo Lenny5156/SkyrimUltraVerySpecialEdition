@@ -1,5 +1,7 @@
 package npc.animal;
 
-public class Wolf {
+import npc.Animal;
+
+public class Wolf extends Animal {
 
 }

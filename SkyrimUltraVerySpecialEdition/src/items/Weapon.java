@@ -1,5 +1,5 @@
 package items;
 
-public class Weapon {
-
+public abstract class Weapon extends Item {
+	public static int damage;
 }
