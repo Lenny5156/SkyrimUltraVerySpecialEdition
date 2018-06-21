@@ -1,4 +1,4 @@
-package npcpresets;
+package npc.npcpresets;
 
 import npc.races.Nord;
 
