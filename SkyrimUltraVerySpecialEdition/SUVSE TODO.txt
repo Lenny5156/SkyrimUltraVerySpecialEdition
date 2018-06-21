@@ -1,3 +1,17 @@
+Currently Working on:
+Combat: A working combat system
+Inventory: Basic Armor and Weapons
+Save:
+Quest: Unbound
+Map: Helgen to Riverwood
+Mechanics: Combat
+Menu: Map, Options, Inventory
+
+
+
+
+
+
 TODO:
 
 Combat
