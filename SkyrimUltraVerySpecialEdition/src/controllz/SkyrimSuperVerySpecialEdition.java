@@ -4,9 +4,8 @@ import java.util.Scanner;
 
 import data.Pictures;
 
-public class SkyrimSuperVerySpecialEdition {
+public class SkyrimSuperVerySpecialEdition extends basic {
 	static Pictures p = new Pictures();
-	static Scanner input = new Scanner(System.in);
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		intro();
@@ -17,20 +16,22 @@ public class SkyrimSuperVerySpecialEdition {
 	
 	
 	private static void intro() {
-		output(p.getBethesda());
-		wait(5000);
+		clear();
+		output(p.getBethesda(), 3);
+		waitForInput();
+		clear();
 		mainMenu();
 	}
 	
 	private static void mainMenu() {
-		output(p.getLogo());
+		output(p.getLogo(), 5);
 		String mainMenuOption = input.next();
 		while(!mainMenuOption.equals("q")) {
 			if (mainMenuOption.equals("c")) showCredits();
 			else if (mainMenuOption.equals("l")) loadGame();
 			else if (mainMenuOption.equals("n")) newGame();
 			else if (mainMenuOption.equals("h")) getHelp();
-			output(p.getLogo());
+			output(p.getLogo(), 3);
 			mainMenuOption = input.next();
 		}
 		output("Bye");
@@ -72,27 +73,7 @@ public class SkyrimSuperVerySpecialEdition {
 		input.next();
 	}
 	
-	
-	
-	/*
-	 * Special Functions
-	 */
-	
-	//Lets the Programm wait for the @param time ins milliseconds
-	private static void wait(int time) {
-		try {
-			Thread.sleep(time);
-		} catch (InterruptedException e) {
-			output(":(");
-			output("We are very sorry but the programm crashed trying to wait");
-			e.printStackTrace();
-		}
-	}
-	
-	//Function for an Output (We're just too lazy to write over and over System.out.println("...");
-	private static void output(String message) {
-		System.out.println(message);
-	}
+
 	
 	
 }

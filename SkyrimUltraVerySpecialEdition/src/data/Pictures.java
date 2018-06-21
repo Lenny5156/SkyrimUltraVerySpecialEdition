@@ -44,7 +44,8 @@ public class Pictures {
 			"              .,''...','.           .;,       .;:.               ':.               ::.      .',.         'l,         .,.             ,;.              \r\n" + 
 			"                .',,,..              ..        ...               .'.               ..         ...        ...         ...             ...                  ";
 	
-	public static String bethesda ="                                                ..........                                                                                           \r\n" + 
+	public static String bethesda =
+			"                                                ..........                                                                                           \r\n" + 
 			"                                          ..,;:clooddddddddolc:;,..                                                                                   \r\n" + 
 			"                                     ..,:ldxxxkkkOOOOOOOOOOOOOOOOkxo:,.                                                                               \r\n" + 
 			"                                  .':odxxkkO00KKKK0OOOOOO0KXKKKKKKK000ko:.                                                                            \r\n" + 
