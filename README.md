@@ -5,7 +5,7 @@ We are trying to make a new version of Skyrim for everyone.
 ## What is SUVSE
 
 SUVSE is an recreation of the popular RPG The Elder Scrolls 5 Skyrim from Bethesda as an Console-Application.
-It will featrue most of the Quests and Locations and will featrue beatiful ASCII-Arts.
+It will featrue most of the Quests and Locations and will feature beautiful ASCII-Arts.
 
 ## The Team
 
