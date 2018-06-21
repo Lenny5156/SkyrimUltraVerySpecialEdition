@@ -34,7 +34,7 @@ public abstract class basic {
 	
 	//Waits for an enter
 	public static void waitForInput() {
-		while (!input.hasNextLine()) {}
+		input.nextLine();
 	}
 	
 	//"clears" the console (in reality it just writes 100 empty lines)

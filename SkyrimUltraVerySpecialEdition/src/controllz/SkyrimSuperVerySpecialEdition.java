@@ -17,7 +17,7 @@ public class SkyrimSuperVerySpecialEdition extends basic {
 	
 	private static void intro() {
 		clear();
-		output(p.getBethesda(), 3);
+		output(p.getBethesda(), 2);
 		waitForInput();
 		clear();
 		mainMenu();
@@ -25,14 +25,15 @@ public class SkyrimSuperVerySpecialEdition extends basic {
 	
 	private static void mainMenu() {
 		output(p.getLogo(), 5);
-		String mainMenuOption = input.next();
+		String mainMenuOption = input.nextLine();
 		while(!mainMenuOption.equals("q")) {
 			if (mainMenuOption.equals("c")) showCredits();
 			else if (mainMenuOption.equals("l")) loadGame();
 			else if (mainMenuOption.equals("n")) newGame();
 			else if (mainMenuOption.equals("h")) getHelp();
-			output(p.getLogo(), 3);
-			mainMenuOption = input.next();
+			clear();
+			output(p.getLogo());
+			mainMenuOption = input.nextLine();
 		}
 		output("Bye");
 		wait(1000);
@@ -54,10 +55,13 @@ public class SkyrimSuperVerySpecialEdition extends basic {
 	
 	private static void getHelp() {
 		String help =
-				"OOOOOOOuuh \n" +
+				"Ooooooouuh \n" +
 				"you need help? \n"+
-				"well you f*cked up";
+				"well you f*cked up \n" +
+				"We are sorry";
 		output(help);
+		wait(1000);
+		waitForInput();
 				
 	}
 	
@@ -70,7 +74,7 @@ public class SkyrimSuperVerySpecialEdition extends basic {
 			"Thank you for playing this Game. \n\n" +
 			"You can support our work via [No option yet]";
 		output(creditsText);
-		input.next();
+		input.nextLine();
 	}
 	
 
