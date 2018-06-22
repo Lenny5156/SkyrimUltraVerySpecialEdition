@@ -10,5 +10,8 @@ public class Player extends Person {
 		if (characterOptions[0].equals("w")) gender = false;
 	}
 	
+	public int gold;
+	public int bounty;
+	
 	
 }

@@ -1,8 +1,13 @@
 package npc;
 
+import java.util.ArrayList;
+
+import items.Item;
+import spells.Spell;
+
 public abstract class Person extends Animal{
-	//NPC Infos
 	
+	//NPC Infos
 	public String civilWarState;
 	public String faction;
 	public boolean gender = false;
