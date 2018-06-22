@@ -21,7 +21,7 @@ public class RaceMenu extends Basic{
 		while (true) {
 			clear();
 			output(raceOptions);
-			int ii = input.nextInt();
+			int ii = getInt();
 			showRace(ii, character[0]);
 			if (ii < 11 | ii > 0) {
 				output("Are you sure? (y/n)");
