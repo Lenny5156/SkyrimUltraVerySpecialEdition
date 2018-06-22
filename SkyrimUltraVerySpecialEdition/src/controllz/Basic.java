@@ -59,4 +59,18 @@ public abstract class Basic {
 		System.out.println("");
 	}
 	
+	
+	//Waits for an input must be an int
+	public static int getInt() {
+		String value;
+		while (true) {
+			value = input.next();
+			try {
+				return Integer.parseInt(value);
+			} catch (Exception e) {
+				output("Please enter a number");
+			}
+		}
+	}
+	
 }
