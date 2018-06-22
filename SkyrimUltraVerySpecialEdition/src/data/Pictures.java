@@ -69,7 +69,7 @@ public class Pictures {
 			":ccc;'''''''',cllc.  ,oodo:,;;;;;;;:,.       .x000:       ,0XXKxoooooooldO0OO;  ckkkdc::;;;;;;;'    ..,;;,''''''',:ccl,  .:llc.          ;lll;    ;llll:'''';llll;.   lWMK, ,0WMNWMMd          :NMWc    \r\n" + 
 			"oddo;........;oxdxc. ;xxxo,.'''''''''.       'kXXK:       ;KNNK,        'kK00:  l000x;''''''''''.  :xdoo:........'ldodc. .cdddc,,,,,,,,,cdxdxc  .cxxxxxxxxxxxdddddc.  lWMK,  .xWMMMMd          :NMWl    \r\n" + 
 			"xkkkOOOOOOOOOOOOOk;  :OOOOOO00000KKKXk.      'ONNNc       ;XWWK;        'OXXK:  oXXXXXXXKKKKKKKKd. :xO0OOxxddddddxxxxx;  .dOkkOOOOOOOOOOOOOOd' .oO00d,........'oOOOo. lWMK,   .oNMMMd          '0MMKdo:.\r\n" + 
-			";::::::cccccccc:;.   .::::::ccccccccl:.      .:lll'       .looc.        .:llc.  ,lllllllllllcccl;   ..;:c::::::::::;,.   .;:::::::::::::::;'.  'cccc.          .:ccc, 'odc.     ;odd,           'ldxxx: \r\n" + 
+			";::::::cccccccc:;.   .::::::ccccccccl:.      .:lll'       .looc.        .:llc.  ,lllllllllllcccl;   ..;:c::::::::::;,.   .;:::::::::::::::;'.  'cccc.          .:ccc, 'odc.     ;odd,           'ldxxx: \r\n"  + 
 			"                      .''''''''''',,'.                                                                                                                                                                  \r\n" + 
 			"                     .lOkkOOOOOO00KXNk'                   .;,''''',.   .;,.   .:,.     ':' .;.....       .'....... ..';'.. .'     .. .,.....'. ., .,'.....'. ',....'.                                   \r\n" + 
 			"                      'xOOOOO000000XWNo                   ,:   ...'.  ';..,.  .;',.  .,',, ';.....       .'.......   .,.   .,     .' ''      ,..;.',      .'.........                                   \r\n" + 
