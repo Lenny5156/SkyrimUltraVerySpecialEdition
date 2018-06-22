@@ -2,7 +2,7 @@ package controllz;
 
 import java.util.Scanner;
 
-public abstract class basic {
+public abstract class Basic {
 	
 	public static Scanner input = new Scanner(System.in);
 	
@@ -40,6 +40,16 @@ public abstract class basic {
 	//"clears" the console (in reality it just writes 100 empty lines)
 	public static void clear() {
 		for (int i = 0; i < 100; i++) System.out.println("\n");
+	}
+	
+	
+	
+	//Makes a simple Dialog 
+	public static void doSimpleDialog(String[] dialog) {
+		for (int i = 0; i < dialog.length; i++) {
+			output(dialog[i], 5);
+			waitForInput();
+		}
 	}
 	
 }

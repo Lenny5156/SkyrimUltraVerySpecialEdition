@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 import data.Pictures;
 
-public class SkyrimSuperVerySpecialEdition extends basic {
+public class SkyrimSuperVerySpecialEdition extends Basic {
 	static Pictures p = new Pictures();
+	static Game g;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		intro(); 
@@ -46,7 +47,7 @@ public class SkyrimSuperVerySpecialEdition extends basic {
 	 */
 	
 	private static void newGame() {
-		
+		g = new Game();
 	}
 	
 	private static void loadGame() {
