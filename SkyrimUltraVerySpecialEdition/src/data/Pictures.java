@@ -1398,7 +1398,7 @@ public class Pictures {
 	public static String getOrcM() {
 		return orcM;
 	}
-	public static void setOrcM(String orcM) {
+	public static void setOrcM(String orcM) { 
 		Pictures.orcM = orcM;
 	}
 	public static String getOrcF() {
