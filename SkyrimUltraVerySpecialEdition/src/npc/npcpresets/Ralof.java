@@ -1,7 +1,7 @@
 package npc.npcpresets;
 
-import npc.races.Nord;
+import npc.Person;
 
-public class Ralof extends Nord{
+public class Ralof extends Person{
 	
 }
