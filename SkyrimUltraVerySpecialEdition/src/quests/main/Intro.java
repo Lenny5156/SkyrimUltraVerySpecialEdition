@@ -4,9 +4,87 @@ import controllz.Basic;
 
 public class Intro extends Basic{
 	
-	public void introSequence() {
-		doSimpleDialog(introText);
+	public void introSequence(int n, String r, boolean g) {
+		switch(n) {
+		case 1:
+			doSimpleDialog(introText);
+			break;
+		/*case 2:
+			switch(r) {
+				case("HighElve"):
+					if(g) {
+						doSimpleDialog(introTextHM);
+					}else {
+						doSimpleDialog(introTextHF);
+					}
+					break;
+				case("Argonian"):
+
+					if(g) {
+						doSimpleDialog(introTextAM);
+					}else {
+						doSimpleDialog(introTextAF);
+					}
+				case("WoodElve"):
+
+					if(g) {
+						doSimpleDialog(introTextWM);
+					}else {
+						doSimpleDialog(introTextWF);
+					}
+				case("Breton"):
+
+					if(g) {
+						doSimpleDialog(introTextBM);
+					}else {
+						doSimpleDialog(introTextBF);
+					}
+				case("DarkElve"):
+
+					if(g) {
+						doSimpleDialog(introTextDM);
+					}else {
+						doSimpleDialog(introTextDF);
+					}
+				case("Imperial"):
+
+					if(g) {
+						doSimpleDialog(introTextIM);
+					}else {
+						doSimpleDialog(introTextIF);
+					}
+				case("Khajiit"):
+
+					if(g) {
+						doSimpleDialog(introTextKM);
+					}else {
+						doSimpleDialog(introTextKF);
+					}
+				case("Nord"):
+
+					if(g) {
+						doSimpleDialog(introTextNM);
+					}else {
+						doSimpleDialog(introTextNF);
+					}
+				case("Orc"):
+
+					if(g) {
+						doSimpleDialog(introTextOM);
+					}else {
+						doSimpleDialog(introTextOF);
+					}
+				case("Redguard"):
+
+					if(g) {
+						doSimpleDialog(introTextRM);
+					}else {
+						doSimpleDialog(introTextRF);
+					}
+			}*/
+		}
 	}
+	
 	
 	
 	
@@ -19,7 +97,7 @@ public class Intro extends Basic{
 				"	You were trying to cross the border, right?\r\n" +
 				"	Walked right into the Imperial ambush, same as us,\r\n" + 
 				"	and that thief over there.\r\n" ,
-				"He's pointing with his Head to the other man in the carriage, which is been gaged.\r\n" ,
+				"He's pointing with his Head to the other man in the carriage.\r\n" ,
 				"Lokir: Damn you Stormcloaks. Skyrim was fine until you came along.\r\n" +
 				"	Empire was nice an lazy.\r\n" + 
 				"	If they haden't been looking for you,\r\n" + 
@@ -103,5 +181,9 @@ public class Intro extends Basic{
 				"Hadevar is pointing on you:\r\n" + 
 				"	Wait. You there. Step forward.\r\n" ,
 				"	Who are you?"};
+	String[] introTextAM =
+				{"Hadvar: Are you a relative of one of the Riften dock workers, Argonian?",
+				"		  Captain. What should we do? He's not on the list.",
+				""};
 	
 }

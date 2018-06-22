@@ -35,11 +35,11 @@ public class RaceMenu extends Basic{
 					clear();
 					output("What is your name prisoner?");
 					character[2] = input.next();
-					return character;
+					break;
 				}
 			}
 		}
-		
+		return character;	
 	}
 	
 	//Just shows a "picture" of the Race and sets the Race in the character[]
