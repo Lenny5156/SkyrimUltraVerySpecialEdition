@@ -45,41 +45,47 @@ public class Pictures {
 			"                .',,,..              ..        ...               .'.               ..         ...        ...         ...             ...                  ";
 	
 	public static String bethesda =
-			"                                                ..........                                                                                           \r\n" + 
-			"                                          ..,;:clooddddddddolc:;,..                                                                                   \r\n" + 
-			"                                     ..,:ldxxxkkkOOOOOOOOOOOOOOOOkxo:,.                                                                               \r\n" + 
-			"                                  .':odxxkkO00KKKK0OOOOOO0KXKKKKKKK000ko:.                                                                            \r\n" + 
-			"                                .:oxxkOO00KXXXXXN0;......,OWNNNNNXXXXXKKK0dl;.                                                                        \r\n" + 
-			"                              'cdxkkO00KXXNNNNWNNO.      .xWWWWWNNNNNNNNNXXXXkc.                                                                      \r\n" + 
-			"                            .cddxkOOkxOXXNNX0kxol:.      .:dxk0KNNNNNKOKNNNNNXXO:.                                                                    \r\n" + 
-			"                          .;oddxkkxc. .cxxoc;;,'..        .',:cldk00o' .oKNNNXXK0d'                                                                   \r\n" + 
-			"                         .:ooddxd:.      .....                ..,;,.     .lx0XKK00k;                                                                  \r\n" + 
-			"                        .:lloood:                                          .:000OOkx:.                                                                \r\n" + 
-			"                       .:cclllooo:.                                      .lxk0OOOkkxx:                                                                \r\n" + 
-			"                      .;::cccllooc;'                                   .;dkOOOOkkkxxdd;                                                               \r\n" + 
-			"                      ,::::cllllc;:,                                    :dxxkOOkkxxddol.                                                              \r\n" + 
-			"                      .............                                      ',,,;,,,,'''''.                                                              \r\n" + 
-			"  ...............    .''''''''',,,'. ',,,,,,;;;;;;;,..;:;.        ';;,. .,;;;;;;,,,,,,,.   ..''''..'''...    ................         ..''''.   ...   \r\n" + 
-			" .,::;;;;;;:::cc:,  .;cccc:cccclllc..ldodddxxxxxxxkd.'kOOc       .lkkd' 'dxxxdoooolllll:. 'clc:;,,,,,;:::,   .;::;;;;;;;;;:::;.      .;ccccc:. .,,.   \r\n" + 
-			" .;::;........;::;. .;cc:'.........  .....:xkk:..... 'kOOo'......,okkd' 'dxdxc'.........  ,llc,.......''..   .;;;.       ..;::,     .;cc;.,cc:.       \r\n" + 
-			" .;c:::;;:::::cc:'  .:lllllllooood:       ;kOO;      'k00000000OOOOOOx' 'dxxxddooooolll'  .lollc::::::;;,'.  .:::.        .;cc;    .:cc;.  ':::'      \r\n" + 
-			" .:ll:'.......;llc' .cddl;''',,,,,.       :0K0:      ,0XXOlcccccclk00k' 'xOkOo;,,,,,'''.  .,;:,'.....';cll,  'llc.        .coo:.  .cool:;,,;llll,     \r\n" + 
-			" .lxdoc:::::::oxxx: .okkdc:::cccccc'      :KXXc      ,KNNd       .oKKO, ,OK0Kklcccccccc:. :kkxc,,'''',cddd:  ,dxdl:::::::coxxkc  ,dkxdlllllllldxd:.   \r\n" + 
-			" .lxdxxxkkkkkkkxdc. .lxxxkkkkkOOOO0:      :0K0:      ,OKKl        l00k' 'k00000000OOOOOk, .lxxxxxxddddddoc.  ,dxxxxxxxxxxxxxo:. ,dkko.        ;dxxc.  \r\n" + 
-			"   .............     .'.'''''''''''.       ...        ....         ...   ...............     ...........      ..............    ....           ....   \r\n" + 
-			"                     'odddddxxxxkOk;                 .'.......   .,.   .,.      '' .'....      ....... ...'.....     .......... .. ........ .......   \r\n" + 
-			"                     .lOkOOOO000KXW0'                ';   ..'.  ,'.'.  ,;'.   .',,..;....      '......   .,.  .,.    '..'     '..'.,.    .'..'......  \r\n" + 
-			"                      .dOO00000KK0d,                 ';. ..';..;,...,. '. .'..'..'..,....      .....''.  .'.  .,.   .'..'    .'..' '.    ...........  \r\n" + 
-			"                       .d000KKKKd'                    ....... ..     . .    ..   .  .....      .......    .    .......  .......  .  ......   ......   \r\n" + 
-			"                        .d0KKXXKd'       .,'.                   .'.                                                                                   \r\n" + 
-			"                         .cOKKXXXKd'   .c0NN0xl;.          .,cokOko,.                                                                                 \r\n" + 
-			"                           'd0KXXXX0o:ckKKKKXXNNXd.      .l0K0Oxdlcc:'.                                                                               \r\n" + 
-			"                             ;x0KKKKKKKK0000OOOOOd.      .cdollcccc::;;..                                                                             \r\n" + 
-			"                               ,ok0000000OOOkkkxxl.      .:lccc:::;;;;,,,..                                                                           \r\n" + 
-			"                                 .:okOOkkkkxxddool;,''''',::::;;;;;,,,,''.                                                                            \r\n" + 
-			"                                    .;coddddoolllcccc::::;;;;;;,,,,,'...                                                                              \r\n" + 
-			"                                        .',;:::::::;;;;;,,,,,,''....                                                                                  \r\n" + 
-			"                                              ...............                                                                                         ";
+			"                                                                                                                                                                                                        \r\n" + 
+			"                                                  ....',,,,,,,,,'...                                                                                                                                    \r\n" + 
+			"                                            ..,;:loddxxxxxxxxkkkkkxdolc;'.                                                                                                                              \r\n" + 
+			"                                        .';codxxxxkkOOOOOOOOOOO00OOOOOOOOkdl;.                                                                                                                          \r\n" + 
+			"                                     .,cdxxxkkOO00KKKKK00000000KKKKKKKKKK0000Oxc,.                                                                                                                      \r\n" + 
+			"                                  .,cdxxkkOO00KKXXXXXXd'.......oXNNNNNXXXXXXKKKKKkc'                                                                                                                    \r\n" + 
+			"                                .;oxxkkOO0KKXXXNNNNNWNc        :XWWWWNNNNNNNXXXXXXX0d,                                                                                                                  \r\n" + 
+			"                              .;odxxkOO0KKXXXNNNNXKOkx,        'xOKXNWWWNNNNNNNNNNNNXKx,                                                                                                                \r\n" + 
+			"                             ,lddxkkOOx:;o0XXKOxoc:;;,.        .;clldxOKXNWXx:lONNNNNXX0o.                                                                                                              \r\n" + 
+			"                           .:ooddxxkd;.   'cl:;,,,'..            ..,;clodkd,   .cONNXXKK0x;                                                                                                             \r\n" + 
+			"                          'cloodddo;.        ...                     ..',.       .:kKKK00Okc.                                                                                                           \r\n" + 
+			"                         'cllloood;                                                :000OOkkkl.                                                                                                          \r\n" + 
+			"                        ':ccllloodoc.                                            'oO0OOOkkkxxc.                                                                                                         \r\n" + 
+			"                       .;::ccclloool:'.                                        .cxOOOOOkkxxxdd:.                                                                                                        \r\n" + 
+			"                      .,::::cclllll;;:'                                        ,ddxOOkkkxxxddoo,                                                                                                        \r\n" + 
+			"                      .,,,,,;;;;:;,','                                          ,lloooolllccc::;.                                                                                                       \r\n" + 
+			"                          ........ ..                                            ...............                                                                      .''''.     .''.   ,oo:     .      \r\n" + 
+			"',,,,,,,,;;;;;;,'.   .;;;;::::::ccccc, .cclllllllllloooo:..oddl.        .cool'  ;olllllllllccccc'  ..';;;;;;;;;;;;;,'.    ';,,,,,,,,,,,,,,'..         .;;;;;;.        cNWWWO,   .kWWo   cWMx.  ,k0O;    \r\n" + 
+			";:::;,,,,,,,;:::c;.  'cccc;;;;;;:::::' 'lllllodxxxdooood:.,kOOx'        .dkxx,  :xdxocccc::::::;.  ;olcc:,''''''',:::;.   ,;;;;,,,,,,,,,;;::;.       ':cc::cc:'       lWMMMMXc  .OMMd   ;XWl  .dNMWx,,. \r\n" + 
+			"::::.........,::c:.  'ccc:...........        'dkkx;       ,kOOk:'''''''':xkkx,  :xdxl...........   :oolc;.........''..    ,;;;.         .,:::'      ':cc:..;cc:'      lWMX0XMNd..OMMd   .:c. .dNWMMNKKd.\r\n" + 
+			":::::::::::::ccc:'   'llllllllooooodl.       .dOOk;       ,O0000000000OOOOOOk;  cxxxxddddoooolo:.  ,llollcc::::::;;;,.   .,:::.          'c:c,     ':cc:.  .;:::'     lWM0;:XMWkl0MMd         .lNMWo... \r\n" + 
+			":ccc;'''''''',cllc.  ,oodo:,;;;;;;;:,.       .x000:       ,0XXKxoooooooldO0OO;  ckkkdc::;;;;;;;'    ..,;;,''''''',:ccl,  .:llc.          ;lll;    ;llll:'''';llll;.   lWMK, ,0WMNWMMd          :NMWc    \r\n" + 
+			"oddo;........;oxdxc. ;xxxo,.'''''''''.       'kXXK:       ;KNNK,        'kK00:  l000x;''''''''''.  :xdoo:........'ldodc. .cdddc,,,,,,,,,cdxdxc  .cxxxxxxxxxxxdddddc.  lWMK,  .xWMMMMd          :NMWl    \r\n" + 
+			"xkkkOOOOOOOOOOOOOk;  :OOOOOO00000KKKXk.      'ONNNc       ;XWWK;        'OXXK:  oXXXXXXXKKKKKKKKd. :xO0OOxxddddddxxxxx;  .dOkkOOOOOOOOOOOOOOd' .oO00d,........'oOOOo. lWMK,   .oNMMMd          '0MMKdo:.\r\n" + 
+			";::::::cccccccc:;.   .::::::ccccccccl:.      .:lll'       .looc.        .:llc.  ,lllllllllllcccl;   ..;:c::::::::::;,.   .;:::::::::::::::;'.  'cccc.          .:ccc, 'odc.     ;odd,           'ldxxx: \r\n" + 
+			"                      .''''''''''',,'.                                                                                                                                                                  \r\n" + 
+			"                     .lOkkOOOOOO00KXNk'                   .;,''''',.   .;,.   .:,.     ':' .;.....       .'....... ..';'.. .'     .. .,.....'. ., .,'.....'. ',....'.                                   \r\n" + 
+			"                      'xOOOOO000000XWNo                   ,:   ...'.  ';..,.  .;',.  .,',, ';.....       .'.......   .,.   .,     .' ''      ,..;.',      .'.........                                   \r\n" + 
+			"                       ;kOO000000KKKk:.                   ,:   ..':. ,:'..';. .,  '..'. .' .,.....       .......,.   .,.   .,     .' .'     .'.., .,      .. ..    .'.                                  \r\n" + 
+			"                        ;k000KKKKKx;                       ........ ..      . ..   ..   .. .......       .........    .     ........ ......... ..  ........  ........                                   \r\n" + 
+			"                         ;kKKKKXXKl.         .                                                                                                                                                          \r\n" + 
+			"                          'xKKKXXXXk:.     .l0Odc,.                .':ldd:.                                                                                                                             \r\n" + 
+			"                           .lOKKXXXXXk:. .ckKXNWWWXOd:.        .;ox0KKOkdo:'.                                                                                                                           \r\n" + 
+			"                             'd0KKXXXXKkdkKKK000KKXXNXc        ;O0Okxolccccc;'.                                                                                                                         \r\n" + 
+			"                               ,dOKKKKKKKK00000OOOkkkx,        'lllllcccc::;;;,..                                                                                                                       \r\n" + 
+			"                                 'lk0000000OOOOkkkxxxd,        'lccc::::;;;;;,,,'.                                                                                                                      \r\n" + 
+			"                                   .;okOOOkkkkkxxddoooc,,'''''';::::;;;;;;,,,,,'..                                                                                                                      \r\n" + 
+			"                                      .,coxxxdddooolllccccc::::;;;;;;;,,,,,,'..                                                                                                                         \r\n" + 
+			"                                         ..,;:clllccc::::;;;;;;;,,,,,,,''...                                                                                                                            \r\n" + 
+			"                                               ...''',,,,,,,,''''......                                                                                                                                 \r\n" + 
+			"                                                                                                                                                                                                        ";
 	
 	public static String altmerM = 
 			"                                                      ......                                        \r\n" + 
