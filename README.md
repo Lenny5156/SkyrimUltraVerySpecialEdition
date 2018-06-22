@@ -20,3 +20,4 @@ We just want to have fun programming it and make the wait for The Elder Scrolls 
 
 We are developping it in Eclipse.
 We try to document it as good as we can.
+If you find any bugs or differences with the original please contact us.
