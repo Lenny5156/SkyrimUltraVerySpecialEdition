@@ -28,10 +28,65 @@ Ralof:	\"Hey, what village are you from horse thief?\"
 Lokir:	\"Why do you care?\"
 Ralof:	\"A Nord's last thoughts should be of home.\"
 Lokir:	\"Rorikstead. I'm ... I'm from Rorinkstead."
+The horse with the car is entering Helgen. A tiny town surrounded by a wall.
 The Imperial Soldier is calling the General:
 	\"General Tullius, sir! The headsman is waiting!\"
 The General is saying sharp:
 	\"Good. Let's get over this over with.\"
 Lokir is praying:
 	\"Shor, Mara, Dibella, Kynareth, Akatosh. Divines, please help me.\"
+Ralof is mumbling scornfully:
+	\"Look at him, General Tullius the Military Governor.\"
+	\"And it looks like the Thalmor are with him. Damn elves.
+	I bet they had something to do with this.\"
+	\"This is Helgen. I used to be sweet on a girl from here.
+	Wonder if Vilod is still making that mead with juniper berries mixed in.\"
+	\"Funny, when I was a boy, imperial walls and towers used to make me feel so safe.\"
+A little boy named Hamming is asking:
+	\"Who are they, daddy? Where are they going?\"
+The father is calling:
+	\"You need to go inside, little cub.\"
+The boy is arguing:
+	\"Why? I want to watch the soldiers.\"
+The father is shouting:
+	\"Inside the house. Now.\"
+The boy is walking sadly back in the house.
+The car stops and an Imperial Captain is screaming:
+	\"Get these prisoners out of the carts. Move it!\"
+Lokir is asking scared:
+	\"Why are we stopping?\"
+Ralof is replying calm:
+	\"Why do you think? End of the line.\"
+	\"Let's go. Shouldn't keep the gods waiting for us.\"
+Everyone stands up and leave the car.
+Lokir is begging:
+	\"No! Wait! We're not rebels!\"
+Ralof is commenting disrespectfully:
+	\"Face your death with some courage, thief.\"
+Lokir is telling:
+	\"You've got to tell the,! We weren't with you! This is a mistake!\"
+As everyone has left the car the Imperial Captain is ordering:
+	\"Step towards the block when we call your name. One at a time.\"¨
+Ralof: \"Empire loves their damn lists."\
+Hadevar, an Imperial Soldier, with a list is calling:
+	\"Ulfric Stormcloak. Jarl of Windhelm."\
+Ralof is saying respectfully:
+	\"It has been an honor, Jar Ulfric!\"
+Ulfric is walking to the people surrounding the block.
+Hadevar: \"Ralof of Riverwood.\"
+		 \"Lokir of Rorikstead.\"
+Lokir is begging for help:
+	\"No, i'm not a rebel. You can't do this!\"
+Lokir started running away.
+Imperial Captain: \"Halt\"
+Lokir: \"You're not going to kill me!\"
+Imperial Captain is shouting:
+	\"Archers!\"
+The Archers are shooting at him after one shot he's falling death to the ground.
+Imperial Captain is asking proud:
+	\"Anyone else feel like running?\"
+Hadevar is pointing on you:
+	\"Wait. You there. Step forward.\"
+	\"Who are you?\"
+		 
 
