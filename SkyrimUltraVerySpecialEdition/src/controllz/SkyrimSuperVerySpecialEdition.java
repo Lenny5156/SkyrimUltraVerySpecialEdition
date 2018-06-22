@@ -47,26 +47,33 @@ public class SkyrimSuperVerySpecialEdition extends Basic {
 	 */
 	
 	private static void newGame() {
+		clear();
 		g = new Game();
 	}
 	
 	private static void loadGame() {
+		clear();
 		//TODO Load game
 	}
 	
 	private static void getHelp() {
+		clear();
 		String help =
-				"Ooooooouuh \n" +
-				"you need help? \n"+
-				"well you f*cked up \n" +
+				"This is a Textadventrue \n\n" +
+				"You control just with the keyboard \n"+
+				"On the left side you can find a letter or number \n"+
+				"Press it and then enter to choose this option \n"+
+				"That's all \n\n"+
+				"We recommend some experience with Skyrim \n"+
+				"This game is not completed yet and in an very early Alpha-Stage \n" +
 				"We are sorry";
 		output(help);
-		wait(1000);
 		waitForInput();
 				
 	}
 	
 	private static void showCredits() {
+		clear();
 		String creditsText = 
 			"This game was developed by: \n" +
 			"Lenny5156					 \n" + 
@@ -75,7 +82,7 @@ public class SkyrimSuperVerySpecialEdition extends Basic {
 			"Thank you for playing this Game. \n\n" +
 			"You can support our work via [No option yet]";
 		output(creditsText);
-		input.nextLine();
+		waitForInput();
 	}
 	
 

@@ -6,7 +6,7 @@ public abstract class Basic {
 	
 	public static Scanner input = new Scanner(System.in);
 	
-	//Lets the Programm wait for the @param time ins milliseconds
+	//Lets the Programm wait for the @param time in milliseconds
 	public static void wait(int time) {
 		try {
 			Thread.sleep(time);
