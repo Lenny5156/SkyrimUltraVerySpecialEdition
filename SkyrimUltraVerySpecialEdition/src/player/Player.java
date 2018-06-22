@@ -1,8 +1,14 @@
 package player;
 
+import java.util.ArrayList;
+
 import npc.Person;
+import quests.Quest;
 
 public class Player extends Person {
+	
+	public ArrayList<Quest> quest = new ArrayList<>();
+	public ArrayList<Quest> finishedQuest = new ArrayList<>();
 	
 	public Player(String[] characterOptions) {
 		setRace(characterOptions[1]);

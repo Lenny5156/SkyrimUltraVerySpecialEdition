@@ -59,13 +59,13 @@ public class SkyrimSuperVerySpecialEdition extends Basic {
 	private static void getHelp() {
 		clear();
 		String help =
-				"This is a Textadventrue \n\n" +
-				"You control just with the keyboard \n"+
-				"On the left side you can find a letter or number \n"+
-				"Press it and then enter to choose this option \n"+
+				"This is a Textadventure \n\n" +
+				"You control the game just with the keyboard \n"+
+				"Enter the optiono you want (letter of number) \n"+
+				"and then enter to choose this option \n"+
 				"That's all \n\n"+
 				"We recommend some experience with Skyrim \n"+
-				"This game is not completed yet and in an very early Alpha-Stage \n" +
+				"This game is not completed yet and in a very early Alpha-Stage \n" +
 				"We are sorry";
 		output(help);
 		waitForInput();
@@ -79,8 +79,7 @@ public class SkyrimSuperVerySpecialEdition extends Basic {
 			"Lenny5156					 \n" + 
 			"MC2BP						 \n" + 
 			"							 \n" +
-			"Thank you for playing this Game. \n\n" +
-			"You can support our work via [No option yet]";
+			"Thank you for playing this Game.";
 		output(creditsText);
 		waitForInput();
 	}

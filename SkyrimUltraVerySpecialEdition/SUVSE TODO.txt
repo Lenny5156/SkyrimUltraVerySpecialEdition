@@ -75,3 +75,12 @@ Novice [0-3]:
 122	Second input of the player
 
 122	He got every digit now right and the lock is now open
+
+
+
+
+Order of quest we want to implement:
+--------------------------------------------------
+1. Thieves gild
+2. The House of Horrors
+3. Night To Remember
