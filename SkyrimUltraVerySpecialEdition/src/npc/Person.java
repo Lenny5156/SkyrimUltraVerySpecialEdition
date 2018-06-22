@@ -55,7 +55,7 @@ public abstract class Person extends Animal{
 	private void setRace(String race) {
 		this.race = race;
 		switch (race) {
-		case "HighElves": 
+		case "HighElve": 
 			//Standard
 			magickaBonus = 50;
 			//Resistances
@@ -110,7 +110,7 @@ public abstract class Person extends Animal{
 			restorationSkillLevel += 5;
 			speechSkillLevel += 5;
 			break;
-		case "DarkElves":
+		case "DarkElve":
 			//Standard
 			//Resistances
 			resistFire = 0.5;
