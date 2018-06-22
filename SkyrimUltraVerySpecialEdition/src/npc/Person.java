@@ -5,7 +5,7 @@ public abstract class Person extends Animal{
 	
 	public String civilWarState;
 	public String faction;
-	public boolean gender;
+	public boolean gender = false;
 	public String race;
 	public boolean waterbreathing = false;
 	
@@ -52,7 +52,7 @@ public abstract class Person extends Animal{
 	
 	public int[][] bonus;
 	
-	private void setRace(String race) {
+	protected void setRace(String race) {
 		this.race = race;
 		switch (race) {
 		case "HighElve": 
