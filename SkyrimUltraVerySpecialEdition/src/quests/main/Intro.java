@@ -141,7 +141,7 @@ public class Intro extends Basic{
 		"Hadevar is pointing on you:\r\n" + 
 		"	Wait. You there. Step forward.\r\n" ,
 		"	Who are you?"
-	};
+	}; 
 	String[] introTextRace1 =
 		{"Hadvar: You're not with the Thalmor Embassy, are you high elf? no, that can't be right....",
 		"Hadvar: Are you a relative of one of the Riften dock workers, Argonian?",
