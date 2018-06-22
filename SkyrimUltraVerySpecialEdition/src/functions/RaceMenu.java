@@ -23,7 +23,7 @@ public class RaceMenu extends Basic{
 			output(raceOptions);
 			int ii = getInt();
 			showRace(ii, character[0]);
-			if (ii < 11 && ii > 0) {
+			if (ii < 11 && ii > 0) { 
 				output("Are you sure? (y/n)");
 				if  (input.next().equals("y") ) { 
 					return character;
