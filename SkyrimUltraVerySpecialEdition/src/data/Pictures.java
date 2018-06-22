@@ -1284,140 +1284,71 @@ public class Pictures {
 	public static String getBethesda() {
 		return bethesda;
 	}
-	public static void setBethesda(String bethesda) {
-		Pictures.bethesda = bethesda;
-	}
 	public static String getLogo() {
 		return logo;
-	}
-	public static void setLogo(String logo) {
-		Pictures.logo = logo;
 	}
 	public static String getTitle() {
 		return title;
 	}
-	public static void setTitle(String title) {
-		Pictures.title = title;
-	}
 	public static String getAltmerM() {
 		return altmerM;
-	}
-	public static void setAltmerM(String altmerM) {
-		Pictures.altmerM = altmerM;
 	}
 	public static String getAltmerF() {
 		return altmerF;
 	}
-	public static void setAltmerF(String altmerF) {
-		Pictures.altmerF = altmerF;
-	}
 	public static String getArgonianM() {
 		return argonianM;
-	}
-	public static void setArgonianM(String argonianM) {
-		Pictures.argonianM = argonianM;
 	}
 	public static String getArgonianF() {
 		return argonianF;
 	}
-	public static void setArgonianF(String argonianF) {
-		Pictures.argonianF = argonianF;
-	}
 	public static String getBosmerM() {
 		return bosmerM;
-	}
-	public static void setBosmerM(String bosmerM) {
-		Pictures.bosmerM = bosmerM;
 	}
 	public static String getBosmerF() {
 		return bosmerF;
 	}
-	public static void setBosmerF(String bosmerF) {
-		Pictures.bosmerF = bosmerF;
-	}
 	public static String getBretonM() {
 		return bretonM;
-	}
-	public static void setBretonM(String bretonM) {
-		Pictures.bretonM = bretonM;
 	}
 	public static String getBretonF() {
 		return bretonF;
 	}
-	public static void setBretonF(String bretonF) {
-		Pictures.bretonF = bretonF;
-	}
 	public static String getDunmerM() {
 		return dunmerM;
-	}
-	public static void setDunmerM(String dunmerM) {
-		Pictures.dunmerM = dunmerM;
 	}
 	public static String getDunmerF() {
 		return dunmerF;
 	}
-	public static void setDunmerF(String dunmerF) {
-		Pictures.dunmerF = dunmerF;
-	}
 	public static String getImperialM() {
 		return imperialM;
-	}
-	public static void setImperialM(String imperialM) {
-		Pictures.imperialM = imperialM;
 	}
 	public static String getImperialF() {
 		return imperialF;
 	}
-	public static void setImperialF(String imperialF) {
-		Pictures.imperialF = imperialF;
-	}
 	public static String getKhajiitM() {
 		return khajiitM;
-	}
-	public static void setKhajiitM(String khajiitM) {
-		Pictures.khajiitM = khajiitM;
 	}
 	public static String getKhajiitF() {
 		return khajiitF;
 	}
-	public static void setKhajiitF(String khajiitF) {
-		Pictures.khajiitF = khajiitF;
-	}
 	public static String getNordM() {
 		return nordM;
-	}
-	public static void setNordM(String nordM) {
-		Pictures.nordM = nordM;
 	}
 	public static String getNordF() {
 		return nordF;
 	}
-	public static void setNordF(String nordF) {
-		Pictures.nordF = nordF;
-	}
 	public static String getOrcM() {
 		return orcM;
-	}
-	public static void setOrcM(String orcM) {
-		Pictures.orcM = orcM;
 	}
 	public static String getOrcF() {
 		return orcF;
 	}
-	public static void setOrcF(String orcF) {
-		Pictures.orcF = orcF;
-	}
 	public static String getRedguardM() {
 		return redguardM;
 	}
-	public static void setRedguardM(String redguardM) {
-		Pictures.redguardM = redguardM;
-	}
 	public static String getRedguardF() {
 		return redguardF;
-	}
-	public static void setRedguardF(String redguardF) {
-		Pictures.redguardF = redguardF;
 	}
 	 
 }
