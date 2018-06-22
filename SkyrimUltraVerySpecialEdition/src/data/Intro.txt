@@ -4,7 +4,7 @@ Ralof: 	\"Hey, you. You're finally awake.\"
 	\"You were trying to cross the border, right?
 	Walked right into the Imperial ambush, same as us,
 	and that thief over there.\"
-He's pointing with his Head to the other man in the carriage, which is beeng gaged.
+He's pointing with his Head to the other man in the carriage.
 Lokir: \"Damn you Stormcloaks. Skyrim was fine until you came along.
 	Empire was nice an lazy.\"
 	\"If they haden't been looking for you,
@@ -14,7 +14,7 @@ Lokir: \"Damn you Stormcloaks. Skyrim was fine until you came along.
 Ralof: 	\"We're all brothers and sisters in binds now, thief.\"
 An Imperial is looking back und shouts:
 	\"Shut up back there!\"
-Lokir is looking to the forth men in the horse car, which has ben gagged, and says:
+Lokir is looking to the forth men in the horse car, which has been gagged, and says:
 	\"And what's wrong with him, huh?\"
 Ralof replayed enraged:
 	\"Watch your tongue. You're speaking to Ulfric Stormcloak, the true High King.\"
