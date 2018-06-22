@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public abstract class Basic {
 	
+	static int textSpeed = 45;
+	
 	public static Scanner input = new Scanner(System.in);
 	
 	//Lets the Programm wait for the @param time in milliseconds
@@ -23,12 +25,16 @@ public abstract class Basic {
 	}
 	
 	//Function for an Output (Character for Character delay is in milliseconds)
-	public static void output(String message, int delay) {
+	public static void printCharForChar(String message, int delay) {
 		char[] text = message.toCharArray();
 		for (int i = 0; i < text.length; i++) {
 			System.out.print(text[i]);
 			if (text[i] != ' ') wait(delay);
 		}
+	}
+	
+	public static void output(String message, int delay) {
+		printCharForChar(message,delay);
 		System.out.println("");
 	}
 	
@@ -47,7 +53,7 @@ public abstract class Basic {
 	//Makes a simple Dialog 
 	public static void doSimpleDialog(String[] dialog) {
 		for (int i = 0; i < dialog.length; i++) {
-			output(dialog[i], 5);
+			printCharForChar(dialog[i], textSpeed);
 			waitForInput();
 		}
 	}
