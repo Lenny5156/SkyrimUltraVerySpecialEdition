@@ -19,7 +19,7 @@ public class SkyrimSuperVerySpecialEdition extends Basic {
 	private static void intro() {
 		clear();
 		output(p.getBethesda(), 2);
-		waitForInput();
+		wait(3000);
 		clear();
 		mainMenu();
 	}

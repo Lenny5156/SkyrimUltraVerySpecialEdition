@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public abstract class Basic {
 	
-	static int textSpeed = 45;
+	static int textSpeed = 0;// 45 is a good value
 	
 	public static Scanner input = new Scanner(System.in);
 	
@@ -56,6 +56,7 @@ public abstract class Basic {
 			printCharForChar(dialog[i], textSpeed);
 			waitForInput();
 		}
+		System.out.println("");
 	}
 	
 }
