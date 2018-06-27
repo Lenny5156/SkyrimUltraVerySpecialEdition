@@ -27,10 +27,10 @@ public class RaceMenu extends Basic{
 		while (true) {
 			clear();
 			output(raceOptions);
-			int ii = getInt()-1;
+			int raceInput = getInt()-1;
 			clear();
-			showRace(ii, character[0]);
-			if (ii < 10 && ii >= 0) { 
+			showRace(raceInput, character[0]);
+			if (raceInput < 10 && raceInput >= 0) { 
 				output("Are you sure? (y/n)");
 				if  (input.next().equals("y") ) {
 					clear();
@@ -43,7 +43,7 @@ public class RaceMenu extends Basic{
 		return character;	
 	}
 	
-	//Just shows a "picture" of the Race and sets the Race in the character[]
+	//Just shows a "picture" of the Race with a description and sets the Race in the character[]
 	private void showRace(int raceID, String gender) {
 		Pictures p = new Pictures();
 		switch (raceID) {

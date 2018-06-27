@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 public abstract class Basic {
 	
+	public static Scanner input = new Scanner(System.in);
+	
+	//Speed in which doSimpleDialog show each char
 	static int textSpeed = 0;// 45 is a good value
 	
-	public static Scanner input = new Scanner(System.in);
 	
 	//Lets the Programm wait for the @param time in milliseconds
 	public static void wait(int time) {
@@ -33,6 +35,7 @@ public abstract class Basic {
 		}
 	}
 	
+	//Function to output an string char for char. At the end comes a new line
 	public static void output(String message, int delay) {
 		printCharForChar(message,delay);
 		System.out.println("");
@@ -48,9 +51,8 @@ public abstract class Basic {
 		for (int i = 0; i < 100; i++) System.out.println("\n");
 	}
 	
-	
-	
 	//Makes a simple Dialog 
+	//The input is an StringArray and after one String is finished it waits for an enter
 	public static void doSimpleDialog(String[] dialog) {
 		for (int i = 0; i < dialog.length; i++) {
 			printCharForChar(dialog[i], textSpeed);
@@ -60,7 +62,7 @@ public abstract class Basic {
 	}
 	
 	
-	//Waits for an input must be an int
+	//Returns an int
 	public static int getInt() {
 		String value;
 		while (true) {

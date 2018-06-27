@@ -1,6 +1,8 @@
 package data;
 
 public class Pictures {
+	//This class is just used to store ASCII-Arts
+	
 	public static String logo =
 			"                     ..          ..               \r\n" + 
 			"                    .'..         .'.              \r\n" + 

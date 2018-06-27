@@ -7,23 +7,22 @@ import data.Pictures;
 public class SkyrimSuperVerySpecialEdition extends Basic {
 	static Pictures p = new Pictures();
 	static Game g;
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		intro(); 
-		
-
-		
+		bethesda(); 
+		mainMenu();
 	}
 	
-	
-	private static void intro() {
+	//The Bethesdan't logo
+	private static void bethesda() {
 		clear();
 		output(p.getBethesda(), 2);
 		wait(3000);
 		clear();
-		mainMenu();
 	}
 	
+	//Menu in which you can load or start a new game.
 	private static void mainMenu() {
 		output(p.getLogo(), 5);
 		String mainMenuOption = input.nextLine();
@@ -46,16 +45,19 @@ public class SkyrimSuperVerySpecialEdition extends Basic {
 	 * Menu Options
 	 */
 	
+	//Starts a new game
 	private static void newGame() {
 		clear();
 		g = new Game();
 	}
 	
+	//Loads a game
 	private static void loadGame() {
 		clear();
 		//TODO Load game
 	}
 	
+	//Shows a short tutorial
 	private static void getHelp() {
 		clear();
 		String help =
@@ -72,6 +74,7 @@ public class SkyrimSuperVerySpecialEdition extends Basic {
 				
 	}
 	
+	//Shows the developer
 	private static void showCredits() {
 		clear();
 		String creditsText = 

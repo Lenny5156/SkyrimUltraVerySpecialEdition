@@ -57,6 +57,8 @@ public abstract class Person extends Animal{
 	
 	public int[][] bonus;
 	
+	
+	//Sets the race with all skillincreases, abilities, spells...
 	protected void setRace(String race) {
 		this.race = race;
 		switch (race) {
