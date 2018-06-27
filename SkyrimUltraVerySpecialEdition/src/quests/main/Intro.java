@@ -86,7 +86,7 @@ public class Intro extends Basic{
 					break;
 			}
 			waitForInput();
-			
+			doSimpleDialog(introText2);
 		}
 	}
 	
@@ -189,29 +189,49 @@ public class Intro extends Basic{
 	};
 	
 	String[] introTextRace1 = {
-		"Hadvar: You're not with the Thalmor Embassy, are you high elf? no, that can't be right....",
-		"Hadvar: Are you a relative of one of the Riften dock workers, Argonian?",
-		"Hadvar: Not many wood elves would choos to come alone to Skyrim.",
-		"Hadvar: You from Daggerfall, Breton? Fleeing from some court intrigue?",
-		"Hadvar: Another refugee? Gods really have abondoned your people, dark elf.",
-		"Hadvar: You're a long way from the Imperial City. What're you doing in Skyrim?",
-		"Hadvar: You with the trade caravans, Khajiit? Your kind always seems to find trouble.",
-		"Hadvar: You picked a bad time to come home to Skyrim, kinsman.",
-		"Hadvar: You from one of the strongholds, Orc? How did you end up here?",
-		"Hadvar: What're you doing here, Redguard? You a sellsword? A sailor from Stors m'kai?"
+		"Hadvar is asking: \r\n"+
+		"	You're not with the Thalmor Embassy, are you high elf? no, that can't be right....",
+		"Hadvar is asking: \r\n"+ 
+		"	Are you a relative of one of the Riften dock workers, Argonian?",
+		"Hadvar is saying: \r\n"+
+		"	Not many wood elves would choos to come alone to Skyrim.",
+		"Hadvar is asking: \r\n"+ 
+		"	You from Daggerfall, Breton? Fleeing from some court intrigue?",
+		"Hadvar is asking: \r\n"+
+		"	Another refugee? Gods really have abondoned your people, dark elf.",
+		"Hadvar is asking: \r\n"+
+		"	You're a long way from the Imperial City. What're you doing in Skyrim?",
+		"Hadvar is asking: \r\n"+
+		"	You with the trade caravans, Khajiit? Your kind always seems to find trouble.",
+		"Hadvar is saying: \r\n"+
+		"	You picked a bad time to come home to Skyrim, kinsman.",
+		"Hadvar is asking: \r\n"+ 
+		"	You from one of the strongholds, Orc? How did you end up here?",
+		"Hadvar is asking: \r\n"+
+		"	What're you doing here, Redguard? You a sellsword? A sailor from Stors m'kai?"
 	};
 	
 	String[] introTextRace2 = {
-		"Hadvar: I'm sorry. We'll make sure your remains are retuned to the Summerset Isle.",
-		"Hadvar: I'm sorry. We'll make sure your remains are retuned to Black Marsh.",
-		"Hadvar: I'm sorry. We'll make sure your remains are retuned to Valenwood.",
-		"Hadvar: I'm sorry. We'll make sure your remains are retuned to High Rock.",
-		"Hadvar: I'm sorry. We'll make sure your remains are retuned to Morrowind.",
-		"Hadvar: I'm sorry. We'll make sure your remains are retuned to Cyrodiil.",
-		"Hadvar: I'm sorry. We'll make sure your remains are retuned to Elsweyr.",
-		"Hadvar: I'm sorry. At least you'll die here, in your homeland.",
-		"Hadvar: I'm sorry. We'll make sure your remains are retuned to Orsinium.",
-		"Hadvar: I'm sorry. We'll make sure your remains are retuned to Hammerfell."
+		"Hadvar is saying regrettingly: \r\n"+
+		"	I'm sorry. We'll make sure your remains are retuned to the Summerset Isle.",
+		"Hadvar is saying regrettingly: \r\n"+
+		"	I'm sorry. We'll make sure your remains are retuned to Black Marsh.",
+		"Hadvar is saying regrettingly: \r\n"+
+		"	I'm sorry. We'll make sure your remains are retuned to Valenwood.",
+		"Hadvar is saying regrettingly: \r\n"+
+		"	I'm sorry. We'll make sure your remains are retuned to High Rock.",
+		"Hadvar is saying regrettingly: \r\n"+
+		"	I'm sorry. We'll make sure your remains are retuned to Morrowind.",
+		"Hadvar is saying regrettingly: \r\n"+
+		"	I'm sorry. We'll make sure your remains are retuned to Cyrodiil.",
+		"Hadvar is saying regrettingly: \r\n"+
+		"	I'm sorry. We'll make sure your remains are retuned to Elsweyr.",
+		"Hadvar is saying regrettingly: \r\n"+
+		"	I'm sorry. At least you'll die here, in your homeland.",
+		"Hadvar is saying regrettingly: \r\n"+
+		"	I'm sorry. We'll make sure your remains are retuned to Orsinium.",
+		"Hadvar is saying regrettingly: \r\n"+
+		"	I'm sorry. We'll make sure your remains are retuned to Hammerfell."
 	};
 	String[] introTextRace3 = {
 		"	Next, the high elf!",
@@ -228,11 +248,43 @@ public class Intro extends Basic{
 	String[] introTextGender = {
 		"	Captain. What should we do? He's not on the list.",
 		"	Captain. What should we do? She's not on the list.",
-		"Captain: Forget the list. He goes to the block.",
-		"Captain: Forget the list. She goes to the block."
+		"Imperial Captain: Forget the list. He goes to the block.",
+		"Imperail Captain: Forget the list. She goes to the block."
 		};
 	String[] introText2 = {
 		"	Folow the Captain, prisoner.\r\n",
-		"The Captain leads you to "
+		"The Captain is leading you to the block.",
+		"Tulius is saying disapointed:\r\n"+
+		"	Ulfric Stormcloak. Some here in Helgen call you a hero. \r\n"+
+		"	But a hero doesn't use a power like the Voice to murder his king and usurp his throne.\r\n",
+		"Ulfric is muffling something\r\n",
+		"Tulius is responding:\r\n"+
+		"	You started this war, pluged Skyrim into chaos, and now the Empire is going to put you down,\r\n"+
+		"	and restore the peace.\r\n",
+		"A scary non human scream is resonating.\r\n",
+		"Hadvar is asking wondering:\r\n"+ 
+		"	What was that?",
+		"Tulius is responding:\r\n"+
+		"	It's nothing. Carry on.\r\n",
+		"Captain is saying:\r\n"+
+		"Yes, general Tullius.",
+		"Captain is saying to the Pristess of Arkay:\r\n"+
+		"	Give them their last rites.",
+		"Pristess is praying:\r\n"+
+		"	As we commend your souls to Aetherius, blessings of the Eight Divines upon you,"+ 
+		"	for you are the salt and earth of Nirn, our beloved....",
+		"A Stormcloak Soldier is moving forward and is saying bored:\r\n"+
+		"	For the love of Talos, shut up and let's get this over with.",
+		"The Priestress of Arkay is responding surprised:\r\n"+
+		"	As you wish.",
+		"The Stormcloak Soldier is nagging:\r\n"+
+		"	Come on, I haven't got all morning.\r\n"+
+		"	My ancesters are smiling at me, Imperials. Can you say the same?\r\n",
+		"The Stormcloak Soldier is moving to the block and is kneeing infront of it.\r\n"+
+		"The Hangman is strinkeing out and is chopping the Soldiers head off.",
+		"An Imperial "
+		
+		
+		
 	};
 }
