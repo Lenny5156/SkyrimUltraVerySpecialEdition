@@ -14,6 +14,6 @@ public class Game extends Basic{
 		intro.introSequence(1,null,false);
 		player = new Player(rm.createCharacter());
 		intro.introSequence(2,player.race,player.gender);
-		waitForInput(); 
+		waitForInput();
 	}
 }

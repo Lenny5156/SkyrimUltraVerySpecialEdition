@@ -7,7 +7,7 @@ public class Intro extends Basic{
 	public void introSequence(int n, String r, boolean g) {
 		switch(n) {
 		case 1:
-			doSimpleDialog(introText);
+			doSimpleDialog(introText1);
 			break;
 		case 2:
 			switch(r) {
@@ -42,6 +42,51 @@ public class Intro extends Basic{
 					output(introTextRace1[9]);
 					break;
 			}
+			waitForInput();
+			if(g){
+				output(introTextGender[0]);
+				waitForInput();
+				output(introTextGender[2]);
+			}else {
+				output(introTextGender[1]);
+				waitForInput();
+				output(introTextGender[3]);
+			}
+			waitForInput();
+			switch(r) {
+				case("HighElve"):
+					output(introTextRace2[0]);
+					break;
+				case("Argonian"):
+					output(introTextRace2[1]);
+					break;
+				case("WoodElve"):
+					output(introTextRace2[2]);
+					break;
+				case("Breton"):
+					output(introTextRace2[3]);
+					break;
+				case("DarkElve"):
+					output(introTextRace2[4]);
+					break;
+				case("Imperial"):
+					output(introTextRace2[5]);
+					break;
+				case("Khajiit"):
+					output(introTextRace2[6]);
+					break;
+				case("Nord"):
+					output(introTextRace2[7]);
+					break;
+				case("Orc"):
+					output(introTextRace2[8]);
+					break;
+				case("Redguard"):
+					output(introTextRace2[9]);
+					break;
+			}
+			waitForInput();
+			
 		}
 	}
 	
@@ -50,8 +95,8 @@ public class Intro extends Basic{
 	
 	
 	
-	String[] introText = 
-		{"You wake up. You sit in a horse car, three other people are next to you.\r\n" +
+		String[] introText1 = {
+		"You wake up. You sit in a horse car, three other people are next to you.\r\n" +
 		"A strong man with long blond hair speaks to you.\r\n" ,
 		"Ralof: 	Hey, you. You're finally awake.\r\n" + 
 		"	You were trying to cross the border, right?\r\n" +
@@ -141,41 +186,53 @@ public class Intro extends Basic{
 		"Hadevar is pointing on you:\r\n" + 
 		"	Wait. You there. Step forward.\r\n" ,
 		"	Who are you?"
-	}; 
-	String[] introTextRace1 =
-		{"Hadvar: You're not with the Thalmor Embassy, are you high elf? no, that can't be right....",
+	};
+	
+	String[] introTextRace1 = {
+		"Hadvar: You're not with the Thalmor Embassy, are you high elf? no, that can't be right....",
 		"Hadvar: Are you a relative of one of the Riften dock workers, Argonian?",
+		"Hadvar: Not many wood elves would choos to come alone to Skyrim.",
 		"Hadvar: You from Daggerfall, Breton? Fleeing from some court intrigue?",
 		"Hadvar: Another refugee? Gods really have abondoned your people, dark elf.",
 		"Hadvar: You're a long way from the Imperial City. What're you doing in Skyrim?",
 		"Hadvar: You with the trade caravans, Khajiit? Your kind always seems to find trouble.",
 		"Hadvar: You picked a bad time to come home to Skyrim, kinsman.",
 		"Hadvar: You from one of the strongholds, Orc? How did you end up here?",
-		"Hadvar: What're you doing here, Redguard? You a sellsword? A sailor from Stors m'kai?",
-		"Hadvar: Not many wood elves would choos to come alone to Skyrim."
+		"Hadvar: What're you doing here, Redguard? You a sellsword? A sailor from Stors m'kai?"
 	};
-	String[] introTextRace2 =
-		{"		 I'm sorry. We'll make sure your remains are retuned to the Summerset Isle.",
-		"		 I'm sorry. We'll make sure your remains are retuned to Black Marsh.",
-		"		 I'm sorry. We'll make sure your remains are retuned to Valenwood.",
-		"		 I'm sorry. We'll make sure your remains are retuned to High Rock.",
-		"		 I'm sorry. We'll make sure your remains are retuned to Morrowind.",
-		"		 I'm sorry. We'll make sure your remains are retuned to Cyrodiil.",
-		"		 I'm sorry. We'll make sure your remains are retuned to Elsweyr.",
-		"		 I'm sorry. At least you'll die here, in your homeland.",
-		"		 I'm sorry. We'll make sure your remains are retuned to Orsinium.",
-		"		 I'm sorry. We'll make sure your remains are retuned to Hammerfell."
+	
+	String[] introTextRace2 = {
+		"Hadvar: I'm sorry. We'll make sure your remains are retuned to the Summerset Isle.",
+		"Hadvar: I'm sorry. We'll make sure your remains are retuned to Black Marsh.",
+		"Hadvar: I'm sorry. We'll make sure your remains are retuned to Valenwood.",
+		"Hadvar: I'm sorry. We'll make sure your remains are retuned to High Rock.",
+		"Hadvar: I'm sorry. We'll make sure your remains are retuned to Morrowind.",
+		"Hadvar: I'm sorry. We'll make sure your remains are retuned to Cyrodiil.",
+		"Hadvar: I'm sorry. We'll make sure your remains are retuned to Elsweyr.",
+		"Hadvar: I'm sorry. At least you'll die here, in your homeland.",
+		"Hadvar: I'm sorry. We'll make sure your remains are retuned to Orsinium.",
+		"Hadvar: I'm sorry. We'll make sure your remains are retuned to Hammerfell."
 	};
-	String[] introTextRace3 =
-		{"		 Next, the high elf!",
-		"		 Next, the lizard!",
-		"		 Next, the wood elf!",
-		"		 Next, the Breton!",
-		"		 Next, the dark elf!",
-		"		 Next, the renegade from Cyrodiil!",
-		"		 Next, the cat!",
-		"		 Next, the Nord in the rags!",
-		"		 Next, the Orc!",
-		"		 Next, the Redguard!"
+	String[] introTextRace3 = {
+		"	Next, the high elf!",
+		"	Next, the lizard!",
+		"	Next, the wood elf!",
+		"	Next, the Breton!",
+		"	Next, the dark elf!",
+		"	Next, the renegade from Cyrodiil!",
+		"	Next, the cat!",
+		"	Next, the Nord in the rags!",
+		"	Next, the Orc!",
+		"	Next, the Redguard!"
+	};
+	String[] introTextGender = {
+		"	Captain. What should we do? He's not on the list.",
+		"	Captain. What should we do? She's not on the list.",
+		"Captain: Forget the list. He goes to the block.",
+		"Captain: Forget the list. She goes to the block."
+		};
+	String[] introText2 = {
+		"	Folow the Captain, prisoner.\r\n",
+		"The Captain leads you to "
 	};
 }
