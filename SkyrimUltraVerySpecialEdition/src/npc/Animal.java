@@ -10,11 +10,12 @@ import spells.Spell;
 public abstract class Animal {
 	public String name;
 	//Arraylist for the inventory, spells, shouts and abilities.
-	ArrayList<Item> inventory = new ArrayList<>();
-	ArrayList<Spell> speels = new ArrayList<>();
-	ArrayList<Shout> shouts = new ArrayList<>();
-	ArrayList<Ability> abilities = new ArrayList<>();
+	public ArrayList<Item> inventory = new ArrayList<>();
+	public ArrayList<Spell> speels = new ArrayList<>();
+	public ArrayList<Shout> shouts = new ArrayList<>();
+	public ArrayList<Ability> abilities = new ArrayList<>();
 	
+	public String soulSize;
 	
 	public int level;
 	public int stamina;
@@ -23,6 +24,7 @@ public abstract class Animal {
 	public int maxHealth;
 	public int magicka;
 	public int maxMagicka;
+	public int unarmedDamage;
 	
 	//Updates the level of the animal
 	private void updateLevel(int min, int max, int playerLevel) {
