@@ -1,15 +1,18 @@
 package data;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class Pictures {
 	//This class is just used to store ASCII-Arts
 	
-	//public static String logo =
-	
-	public static File getPicture(String pic) {
-		return new File(Pictures.class.getResource("pictures/"+pic).getFile());
+	//Gives back the inputstream of the file
+	public static InputStream getPicture(String pic) {
+		return Pictures.class.getResourceAsStream("pictures/"+pic);
 	}
+	
 	
 	
 			

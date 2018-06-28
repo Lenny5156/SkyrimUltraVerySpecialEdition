@@ -3,6 +3,7 @@ package controllz;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Scanner;
 
 import data.Pictures;
@@ -88,18 +89,16 @@ public abstract class Basic {
 		}
 	}
 	
-	//Gives back the String from the File 
-	public static String getStringFromFile(File file) {
-		try {
-			return new Scanner(file).useDelimiter("\\Z").next();
-		} catch (FileNotFoundException e1) {
-			return "Image not found \nWe are Sorry";
-		}
+	
+	//Gives back the string of an inputstream
+	public static String getStringFromStream(InputStream is) {
+		return new Scanner(is).useDelimiter("\\A").next();
 	}
+	
 	
 	//gives back the String from the file in the package data.pictures
 	public static String getStringFromPicture(String file) {
-		return getStringFromFile(Pictures.getPicture(file));
+		return getStringFromStream(Pictures.getPicture(file));
 	}
 	
 }

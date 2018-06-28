@@ -1,15 +1,15 @@
 package controllz;
 
-import java.io.File;
-
 import data.Pictures;
 
 public class SkyrimSuperVerySpecialEdition extends Basic {
 	static Game g;
 	
 	public static void main(String[] args) {
+
 		bethesda(); 
 		mainMenu();
+
 	}
 	
 	//The Bethesdan't logo
