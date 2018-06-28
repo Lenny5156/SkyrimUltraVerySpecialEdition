@@ -1,15 +1,16 @@
 package controllz;
 
-import java.util.Scanner;
+import java.io.File;
 
 import data.Pictures;
 
 public class SkyrimSuperVerySpecialEdition extends Basic {
-	static Pictures p = new Pictures();
 	static Game g;
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		/*File intro = new File("");
+		//output(getStringFromFile(new File("src/data/Intro.txt")));
+		waitForInput();*/
 		bethesda(); 
 		mainMenu();
 	}
@@ -17,14 +18,14 @@ public class SkyrimSuperVerySpecialEdition extends Basic {
 	//The Bethesdan't logo
 	private static void bethesda() {
 		clear();
-		output(p.getBethesda(), 2);
+		output(Pictures.getBethesda(), 2);
 		wait(3000);
 		clear();
 	}
 	
 	//Menu in which you can load or start a new game.
 	private static void mainMenu() {
-		output(p.getLogo(), 5);
+		output(Pictures.getLogo(), 5);
 		String mainMenuOption = input.nextLine();
 		while(!mainMenuOption.equals("q")) {
 			if (mainMenuOption.equals("c")) showCredits();
@@ -32,7 +33,7 @@ public class SkyrimSuperVerySpecialEdition extends Basic {
 			else if (mainMenuOption.equals("n")) newGame();
 			else if (mainMenuOption.equals("h")) getHelp();
 			clear();
-			output(p.getLogo());
+			output(Pictures.getLogo());
 			mainMenuOption = input.nextLine();
 		}
 		output("Bye");
@@ -70,8 +71,7 @@ public class SkyrimSuperVerySpecialEdition extends Basic {
 				"This game is not completed yet and in a very early Alpha-Stage \n" +
 				"We are sorry";
 		output(help);
-		waitForInput();
-				
+		waitForInput();			
 	}
 	
 	//Shows the developer

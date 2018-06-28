@@ -1,5 +1,7 @@
 package controllz;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public abstract class Basic {
@@ -72,6 +74,15 @@ public abstract class Basic {
 			} catch (Exception e) {
 				output("Please enter a number");
 			}
+		}
+	}
+	
+	//Gives back the String from the File 
+	public static String getStringFromFile(File file) {
+		try {
+			return new Scanner(file).useDelimiter("\\Z").next();
+		} catch (FileNotFoundException e1) {
+			return "Image not found \nWe are Sorry \nUWU";
 		}
 	}
 	
