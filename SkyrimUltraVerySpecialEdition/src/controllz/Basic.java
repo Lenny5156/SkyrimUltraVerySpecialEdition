@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
+import data.Pictures;
+
 
 public abstract class Basic {
 	
@@ -91,8 +93,13 @@ public abstract class Basic {
 		try {
 			return new Scanner(file).useDelimiter("\\Z").next();
 		} catch (FileNotFoundException e1) {
-			return "Image not found \nWe are Sorry \nUWU";
+			return "Image not found \nWe are Sorry";
 		}
+	}
+	
+	//gives back the String from the file in the package data.pictures
+	public static String getStringFromPicture(String file) {
+		return getStringFromFile(Pictures.getPicture(file));
 	}
 	
 }

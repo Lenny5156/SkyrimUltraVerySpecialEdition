@@ -1,9 +1,17 @@
 package data;
 
+import java.io.File;
+
 public class Pictures {
 	//This class is just used to store ASCII-Arts
 	
 	//public static String logo =
+	
+	public static File getPicture(String pic) {
+		return new File(Pictures.class.getResource("pictures/"+pic).getFile());
+	}
+	
+	
 			
 	public static String title =
 			"    		.......              ..       ..            .'.       ..           .........             ..          .....          ...               \r\n" + 

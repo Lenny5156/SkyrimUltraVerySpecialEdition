@@ -8,8 +8,6 @@ public class SkyrimSuperVerySpecialEdition extends Basic {
 	static Game g;
 	
 	public static void main(String[] args) {
-		//output(getStringFromFile(new File(SkyrimSuperVerySpecialEdition.class.getResource("../data/Intro.txt").getFile())));
-		//waitForInput();
 		bethesda(); 
 		mainMenu();
 	}
@@ -17,14 +15,14 @@ public class SkyrimSuperVerySpecialEdition extends Basic {
 	//The Bethesdan't logo
 	private static void bethesda() {
 		clear();
-		output(Pictures.getBethesda(), 2);
+		output(getStringFromPicture("Bethesda"),2);
 		wait(3000);
 		clear();
 	}
 	
 	//Menu in which you can load or start a new game.
 	private static void mainMenu() {
-		output(Pictures.getLogo(), 5);
+		output(getStringFromPicture("Logo"), 5);
 		String mainMenuOption = input.nextLine();
 		while(!mainMenuOption.equals("q")) {
 			if (mainMenuOption.equals("c")) showCredits();
@@ -32,7 +30,7 @@ public class SkyrimSuperVerySpecialEdition extends Basic {
 			else if (mainMenuOption.equals("n")) newGame();
 			else if (mainMenuOption.equals("h")) getHelp();
 			clear();
-			output(Pictures.getLogo());
+			output(getStringFromPicture("Logo"), 5);
 			mainMenuOption = input.nextLine();
 		}
 		output("Bye");
