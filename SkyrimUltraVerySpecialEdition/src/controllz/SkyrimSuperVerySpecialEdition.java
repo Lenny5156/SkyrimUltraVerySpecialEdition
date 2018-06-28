@@ -8,8 +8,8 @@ public class SkyrimSuperVerySpecialEdition extends Basic {
 	static Game g;
 	
 	public static void main(String[] args) {
-		output(getStringFromFile(new File(SkyrimSuperVerySpecialEdition.class.getResource("../data/Intro.txt").getFile())));
-		waitForInput();
+		//output(getStringFromFile(new File(SkyrimSuperVerySpecialEdition.class.getResource("../data/Intro.txt").getFile())));
+		//waitForInput();
 		bethesda(); 
 		mainMenu();
 	}

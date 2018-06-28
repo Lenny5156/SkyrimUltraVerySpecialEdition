@@ -2,7 +2,9 @@ package controllz;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
+
 
 public abstract class Basic {
 	
@@ -50,7 +52,13 @@ public abstract class Basic {
 	
 	//"clears" the console (in reality it just writes 100 empty lines)
 	public static void clear() {
-		for (int i = 0; i < 100; i++) System.out.println("\n");
+		//for (int i = 0; i < 100; i++) System.out.println("\n");
+		try {
+	        if (System.getProperty("os.name").contains("Windows"))
+	            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+	        else
+	            Runtime.getRuntime().exec("clear");
+	    } catch (IOException | InterruptedException ex) {}
 	}
 	
 	//Makes a simple Dialog 
