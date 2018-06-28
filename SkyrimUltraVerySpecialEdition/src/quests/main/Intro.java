@@ -1,6 +1,6 @@
 package quests.main;
 
-import controllz.Basic;
+import game.Basic;
 
 public class Intro extends Basic{
 	

@@ -1,7 +1,6 @@
 package functions;
 
-import controllz.Basic;
-import data.FileHandler;
+import game.Basic;
 
 public class RaceMenu extends Basic{
 	

@@ -1,4 +1,4 @@
-package controllz;
+package game;
 
 import functions.RaceMenu;
 import player.Player;
