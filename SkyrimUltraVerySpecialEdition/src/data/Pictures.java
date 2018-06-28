@@ -3,37 +3,8 @@ package data;
 public class Pictures {
 	//This class is just used to store ASCII-Arts
 	
-	public static String logo =
-			"                     ..          ..               \r\n" + 
-			"                    .'..         .'.              \r\n" + 
-			"                   .'.            ';.             \r\n" + 
-			"                 ..'.  ..   ..    .,'             \r\n" + 
-			"                ....   .'..',.     ';.            \r\n" + 
-			"               .....  .,'....',.   .;'.           \r\n" + 
-			"              .....  .;..     ..   .,,''          \r\n" + 
-			"             ..... .       ....    .';'''         \r\n" + 
-			"           .'....      .',,'..      .:,.,'        \r\n" + 
-			"          .'..'..     .''..          ,:..;.       \r\n" + 
-			"         .'.....    ..:c'..          .:,..;.      \r\n" + 
-			"        ...,,....  .,,oKl.......   .'.',. ..      \r\n" + 
-			"         ..,c;;,,:ccdl:xo;,''.,cc:clc,,'. .       \r\n" + 
-			"          ..:c:c;;:cc;,;:;;,;,'',,,;:::'...       \r\n" + 
-			"           .;:ldx:..,'',lddoc;..'..,cl;...        \r\n" + 
-			"            .;oO0c .'. .;oddc,. . .xOo'..         \r\n" + 
-			"            .'ck0:       .;dl,    ;0Oc..          \r\n" + 
-			"             .,co.        'xx,    ,Od,.           \r\n" + 
-			"              .''.        .dO,    'o:.            \r\n" + 
-			"              .'',,..      :O:   .,;.             \r\n" + 
-			"               .',,;'     .cc. .....              \r\n" + 
-			"                 ',;'   ;ol'     .                \r\n" + 
-			"                  'c'   ;xl.                      \r\n" + 
-			" n: New            ..   'cc.                      \r\n" + 
-			" l: Load              .,;,.                       \r\n" + 
-			" q: Quit              ':.   .;.                   \r\n" + 
-			" c: Credits            ';'.'oc                    \r\n" + 
-			" h: Help                .,;c,                     \r\n" + 
-			"                           .                      \r\n" + 
-			"                                                      ";
+	//public static String logo =
+			
 	public static String title =
 			"    		.......              ..       ..            .'.       ..           .........             ..          .....          ...               \r\n" + 
 			"              .,'.    ..            .:c.     ...           .ll.     ...          .::..    ..'.          ,l'         'o;;c'       .,,;,.              \r\n" + 
@@ -1292,9 +1263,9 @@ public class Pictures {
 	public static String getBethesda() {
 		return bethesda;
 	}
-	public static String getLogo() {
+/*	public static String getLogo() {
 		return logo;
-	}
+	}*/
 	public static String getTitle() {
 		return title;
 	}
