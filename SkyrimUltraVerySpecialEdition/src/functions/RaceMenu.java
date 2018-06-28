@@ -28,8 +28,8 @@ public class RaceMenu extends Basic{
 			output(raceOptions);
 			int raceInput = getInt()-1;
 			clear();
-			showRace(raceInput, character[0]);
 			if (raceInput < 10 && raceInput >= 0) { 
+				showRace(raceInput, character[0]);
 				output("Are you sure? (y/n)");
 				if  (input.next().equals("y") ) {
 					clear();
