@@ -57,7 +57,8 @@ public abstract class Basic {
 	        if (System.getProperty("os.name").contains("Windows"))
 	            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
 	        else
-	            Runtime.getRuntime().exec("clear");
+	        	System.out.print("\033\143");
+	            //Runtime.getRuntime().exec("clear");
 	    } catch (IOException | InterruptedException ex) {}
 	}
 	
