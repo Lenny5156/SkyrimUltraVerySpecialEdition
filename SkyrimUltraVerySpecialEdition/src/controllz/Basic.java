@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Scanner;
 
-import data.Pictures;
+import data.FileHandler;
 
 
 public abstract class Basic {
@@ -98,7 +98,12 @@ public abstract class Basic {
 	
 	//gives back the String from the file in the package data.pictures
 	public static String getStringFromPicture(String file) {
-		return getStringFromStream(Pictures.getPicture(file));
+		return getStringFromStream(FileHandler.getPicture(file));
+	}
+	
+	//gives back the String from the file in the package data.text
+	public static String getStringFromText(String file) {
+		return getStringFromStream(FileHandler.getText(file));
 	}
 	
 }

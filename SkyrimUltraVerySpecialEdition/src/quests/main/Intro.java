@@ -4,9 +4,11 @@ import controllz.Basic;
 
 public class Intro extends Basic{
 	
-	public void introSequence(int n, String r, boolean g) {
+	public static void introSequence(int n, String r, boolean g) {
 		switch(n) {
 		case 1:
+			output(getStringFromPicture("Skyrim"),2);
+			waitForInput();
 			doSimpleDialog(introText1);
 			break;
 		case 2:
@@ -95,7 +97,7 @@ public class Intro extends Basic{
 	
 	
 	
-		String[] introText1 = {
+		static String[] introText1 = {
 		"You wake up. You sit in a horse car, three other people are next to you.\r\n" +
 		"A strong man with long blond hair speaks to you.\r\n" ,
 		"Ralof: 	Hey, you. You're finally awake.\r\n" + 
@@ -188,7 +190,7 @@ public class Intro extends Basic{
 		"	Who are you?"
 	};
 	
-	String[] introTextRace1 = {
+	static String[] introTextRace1 = {
 		"Hadvar is asking: \r\n"+
 		"	You're not with the Thalmor Embassy, are you high elf? no, that can't be right....",
 		"Hadvar is asking: \r\n"+ 
@@ -211,7 +213,7 @@ public class Intro extends Basic{
 		"	What're you doing here, Redguard? You a sellsword? A sailor from Stors m'kai?"
 	};
 	
-	String[] introTextRace2 = {
+	static String[] introTextRace2 = {
 		"Hadvar is saying regrettingly: \r\n"+
 		"	I'm sorry. We'll make sure your remains are retuned to the Summerset Isle.",
 		"Hadvar is saying regrettingly: \r\n"+
@@ -245,13 +247,13 @@ public class Intro extends Basic{
 		"	Next, the Orc!",
 		"	Next, the Redguard!"
 	};
-	String[] introTextGender = {
+	static String[] introTextGender = {
 		"	Captain. What should we do? He's not on the list.",
 		"	Captain. What should we do? She's not on the list.",
 		"Imperial Captain: Forget the list. He goes to the block.",
 		"Imperail Captain: Forget the list. She goes to the block."
 		};
-	String[] introText2 = {
+	static String[] introText2 = {
 		"	Folow the Captain, prisoner.\r\n",
 		"The Captain is leading you to the block.",
 		"Tulius is saying disapointed:\r\n"+

@@ -1,6 +1,6 @@
 package controllz;
 
-import data.Pictures;
+import data.FileHandler;
 
 public class SkyrimSuperVerySpecialEdition extends Basic {
 	static Game g;
