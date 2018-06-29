@@ -31,6 +31,11 @@ public abstract class Basic {
 		System.out.println(message);
 	}
 	
+	//Function for an Output NO newline
+	public static void simpleOutput(String message) {
+		System.out.print(message);
+	}
+	
 	//Function for an Output (Character for Character delay is in milliseconds)
 	public static void printCharForChar(String message, int delay) {
 		char[] text = message.toCharArray();
@@ -93,7 +98,6 @@ public abstract class Basic {
 		return new Scanner(is).useDelimiter("[^n\r]\n+").next();
 	}
 	
-	
 	//gives back the String from the file in the package data.pictures
 	public static String getStringFromPicture(String file) {
 		return getStringFromStream(FileHandler.getPicture(file));
@@ -102,6 +106,22 @@ public abstract class Basic {
 	//gives back the String from the file in the package data.text
 	public static String getStringFromText(String file) {
 		return getStringFromStream(FileHandler.getText(file));
+	}
+	
+	/* Outputs a text (Must be singleline) in a frame
+	 * |----|
+	 * |Test|
+	 * |----|
+	 */
+	public static void outputStringInFrame(String text) {
+		int length = text.length();
+		simpleOutput("|");
+		for (int i = 0; i < length; i++) simpleOutput("-");
+		simpleOutput("|\n|");
+		simpleOutput(text);
+		simpleOutput("|\n|");
+		for (int i = 0; i < length; i++) simpleOutput("-");
+		output("|");
 	}
 	
 }

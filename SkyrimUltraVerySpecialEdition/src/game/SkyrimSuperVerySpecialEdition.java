@@ -4,7 +4,6 @@ public class SkyrimSuperVerySpecialEdition extends Basic {
 	static Game g;
 	
 	public static void main(String[] args) {
-
 		//bethesda(); 
 		mainMenu();
 
