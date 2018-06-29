@@ -23,6 +23,7 @@ public class Intro extends Quest{
 			output(getStringFromText("quests/intro/Intro"+r).split(";")[1]);
 			doSimpleDialog((getStringFromText("quests/intro/Intro").split("@")[1]).split(";"));
 			output(getStringFromText("quests/intro/Intro"+r).split(";")[2]);
+			doSimpleDialog((getStringFromText("quests/intro/Intro").split("@")[2]).split(";"));
 		}
 	}
 }
