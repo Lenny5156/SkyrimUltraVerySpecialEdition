@@ -1,6 +1,8 @@
 package quests;
 
-public abstract class Quest {
+import game.Basic;
+
+public abstract class Quest extends Basic{
 	public static String questGiver;
 	public static String questName;
 }
