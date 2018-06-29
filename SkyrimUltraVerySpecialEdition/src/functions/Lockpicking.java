@@ -5,7 +5,7 @@ import game.Basic;
 public class Lockpicking extends Basic{
 	
 	//Function for Lockpicken
-	//TODO include lockpicks
+	//TODO include lockpicks 
 	public static boolean lockPicking(int max, int length) {
 		String pw = "";
 		for (int i = 0; i < length; i++) {
