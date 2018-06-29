@@ -45,7 +45,7 @@ public class RaceMenu extends Basic{
 	//Just shows a "picture" of the Race with a description and sets the Race in the character[]
 	private static void showRace(int raceID, String gender) {
 		output(getStringFromPicture("races/"+gender+"/"+races[raceID]),1);
-		output(getStringFromText(races[raceID]));
+		output(getStringFromText("racemenu/"+races[raceID]));
 		character[1] = races[raceID];
 	}
 	
