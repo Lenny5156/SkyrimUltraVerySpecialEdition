@@ -90,7 +90,7 @@ public abstract class Basic {
 	
 	//Gives back the string of an inputstream
 	public static String getStringFromStream(InputStream is) {
-		return new Scanner(is).useDelimiter("\\A").next();
+		return new Scanner(is).useDelimiter("[^n\r]\n+").next();
 	}
 	
 	

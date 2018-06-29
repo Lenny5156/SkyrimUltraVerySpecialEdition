@@ -8,11 +8,12 @@ public class Intro extends Quest{
 		case 1:
 			output(getStringFromPicture("Skyrim"),2);
 			waitForInput();
-			doSimpleDialog((getStringFromText("quests/intro/Intro").split("^")[1]).split(";"));
+			doSimpleDialog(getStringFromText("quests/intro/Intro").split("@")[0].split(";"));
 			break;
 		case 2:
 			output(getStringFromText("quests/intro/Intro"+r).split(";")[0]);
 			waitForInput();
+			
 			if(g){
 				doSimpleDialog(getStringFromText("quests/intro/IntroM").split(";"));
 			}else {
@@ -20,7 +21,7 @@ public class Intro extends Quest{
 			}
 			waitForInput();
 			output(getStringFromText("quests/intro/Intro"+r).split(";")[1]);
-			doSimpleDialog((getStringFromText("quests/intro/Intro").split("^")[2]).split(";"));
+			doSimpleDialog((getStringFromText("quests/intro/Intro").split("@")[1]).split(";"));
 			output(getStringFromText("quests/intro/Intro"+r).split(";")[2]);
 		}
 	}
