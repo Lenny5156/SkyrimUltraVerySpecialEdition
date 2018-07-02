@@ -5,7 +5,7 @@ import game.Basic;
 public class RaceMenu extends Basic{
 	
 	private  String[] character = new String[3];
-	private  String raceOptions = "Choose your race \n	1.HighElve, 2.Argonian, 3.WoodElve, 4.Breton, 5.DarkElve, 6.Imperial, 7.Khajiit, 8.Nord, 9.Orc, 10.Redguard \n Write the first letter of the Race to choose it.";
+	private  String raceOptions = "Choose your race \n	1.HighElve, 2.Argonian, 3.WoodElve, 4.Breton, 5.DarkElve, 6.Imperial, 7.Khajiit, 8.Nord, 9.Orc, 10.Redguard \n Write the number of the Race to choose it.";
 	private  String[] races = {"HighElve","Argonian","WoodElve","Breton","DarkElve","Imperial","Khajiit","Nord","Orc","Redguard"};
 	/* Creates a dialog in which the player can choose his gender, race and name
 	 * The informations about the player are returned in a String[]
