@@ -1,6 +1,6 @@
 package items;
 
 public abstract class Weapon extends Item {
-	public static int damage;
-	public static boolean selected = false;
+	public  int damage;
+	public  boolean selected = false;
 }

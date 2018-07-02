@@ -6,7 +6,7 @@ public class Lockpicking extends Basic{
 	
 	//Function for Lockpicken
 	//TODO include lockpicks 
-	public static boolean lockPicking(int max, int length) {
+	public  boolean lockPicking(int max, int length) {
 		String pw = "";
 		for (int i = 0; i < length; i++) {
 			pw += Integer.toString((int)(Math.random()*max));
@@ -34,7 +34,7 @@ public class Lockpicking extends Basic{
 	
 	//Checks if the player guessed the pw right
 	//Also outputs the mistakes
-	private static boolean outputNumbers(String n, String ip) {
+	private  boolean outputNumbers(String n, String ip) {
 		boolean returnValue = true;
 		String output = "";
 		char[] ui = ip.toCharArray();
@@ -50,7 +50,7 @@ public class Lockpicking extends Basic{
 	}
 	
 	//Outputs help
-	private static void showHelp() {
+	private  void showHelp() {
 		output("Explanation n/a");
 	}
 	

@@ -1,8 +1,8 @@
 package items;
 
 public abstract class Item {
-	public static int weight;
-	public static int value;
-	public static boolean stolen;
-	public static int quantity;
+	public  int weight;
+	public  int value;
+	public  boolean stolen;
+	public  int quantity;
 }

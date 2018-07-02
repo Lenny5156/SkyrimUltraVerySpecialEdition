@@ -9,14 +9,14 @@ import data.FileHandler;
 
 public abstract class Basic {
 	
-	public static Scanner input = new Scanner(System.in);
+	public Scanner input = new Scanner(System.in);
 	
 	//Speed in which doSimpleDialog show each char
 	static int textSpeed;// 45 is a good value
 	
 	
 	//Lets the Programm wait for the @param time in milliseconds
-	public static void wait(int time) {
+	public void wait(int time) {
 		try {
 			Thread.sleep(time);
 		} catch (InterruptedException e) { 
@@ -27,17 +27,17 @@ public abstract class Basic {
 	}
 	
 	//Function for an Output (We're just too lazy to write over and over System.out.println("...");
-	public static void output(String message) {
+	public void output(String message) {
 		System.out.println(message);
 	}
 	
 	//Function for an Output NO newline
-	public static void simpleOutput(String message) {
+	public void simpleOutput(String message) {
 		System.out.print(message);
 	}
 	
 	//Function for an Output (Character for Character delay is in milliseconds)
-	public static void printCharForChar(String message, int delay) {
+	public void printCharForChar(String message, int delay) {
 		char[] text = message.toCharArray();
 		for (int i = 0; i < text.length; i++) {
 			System.out.print(text[i]);
@@ -46,31 +46,31 @@ public abstract class Basic {
 	}
 	
 	//Function to output an string char for char. At the end comes a new line
-	public static void output(String message, int delay) {
+	public void output(String message, int delay) {
 		printCharForChar(message,delay);
 		System.out.println("");
 	}
 	
 	//Waits for an enter
-	public static void waitForInput() {
+	public void waitForInput() {
 		input.nextLine();
 	}
 	
 	//"clears" the console (in reality it just writes 100 empty lines)
-	public static void clear() {
+	public void clear() {
 		//for (int i = 0; i < 100; i++) System.out.println("\n");
 		try {
-	        if (System.getProperty("os.name").contains("Windows"))
-	            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-	        else
-	        	System.out.print("\033\143");
-	            //Runtime.getRuntime().exec("clear");
-	    } catch (IOException | InterruptedException ex) {}
+	    if (System.getProperty("os.name").contains("Windows"))
+	      new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+	    else
+	    	System.out.print("\033\143");
+	      //Runtime.getRuntime().exec("clear");
+	  } catch (IOException | InterruptedException ex) {}
 	}
 	
 	//Makes a simple Dialog 
 	//The input is an StringArray and after one String is finished it waits for an enter
-	public static void doSimpleDialog(String[] dialog) {
+	public void doSimpleDialog(String[] dialog) {
 		for (int i = 0; i < dialog.length; i++) {
 			printCharForChar(dialog[i], textSpeed);
 			waitForInput();
@@ -80,7 +80,7 @@ public abstract class Basic {
 	
 	
 	//Returns an int
-	public static int getInt() {
+	public int getInt() {
 		String value;
 		while (true) {
 			value = input.next();
@@ -94,17 +94,17 @@ public abstract class Basic {
 	
 	
 	//Gives back the string of an inputstream
-	public static String getStringFromStream(InputStream is) {
+	public String getStringFromStream(InputStream is) {
 		return new Scanner(is).useDelimiter("[^n\r]\n+").next();
 	}
 	
 	//gives back the String from the file in the package data.pictures
-	public static String getStringFromPicture(String file) {
+	public String getStringFromPicture(String file) {
 		return getStringFromStream(FileHandler.getPicture(file));
 	}
 	
 	//gives back the String from the file in the package data.text
-	public static String getStringFromText(String file) {
+	public String getStringFromText(String file) {
 		return getStringFromStream(FileHandler.getText(file));
 	}
 	
@@ -113,7 +113,7 @@ public abstract class Basic {
 	 * |Test|
 	 * |----|
 	 */
-	public static void outputStringInFrame(String text) {
+	public void outputStringInFrame(String text) {
 		int length = text.length();
 		simpleOutput("|");
 		for (int i = 0; i < length; i++) simpleOutput("-");

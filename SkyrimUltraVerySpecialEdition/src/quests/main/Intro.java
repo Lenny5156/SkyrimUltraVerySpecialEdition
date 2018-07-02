@@ -1,9 +1,10 @@
 package quests.main;
 
-import quests.Quest;
+import game.Basic;
 
-public class Intro extends Quest{
-	public static void introSequence(int n, String r, boolean g) {
+public class Intro extends Basic {
+
+	public  void introSequence(int n, String r, boolean g) {
 		switch(n) {
 		case 1:
 			output(getStringFromPicture("Skyrim"),2);
