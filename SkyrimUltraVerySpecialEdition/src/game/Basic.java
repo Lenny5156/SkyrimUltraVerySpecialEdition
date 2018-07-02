@@ -108,6 +108,11 @@ public abstract class Basic {
 		return getStringFromStream(FileHandler.getText(file));
 	}
 	
+	//gives back the String from the file in the package data.map
+	public String getStringFromMap(String file) {
+		return getStringFromStream(FileHandler.getMap(file));
+	}
+	
 	/* Outputs a text (Must be singleline) in a frame
 	 * |----|
 	 * |Test|

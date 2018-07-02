@@ -14,5 +14,8 @@ public class FileHandler {
 	public static  InputStream getText(String text) {
 		return FileHandler.class.getResourceAsStream("text/"+text);
 	}	
-	
+	//Gives back the inputstream of the file in the package map
+	public static  InputStream getMap(String text) {
+		return FileHandler.class.getResourceAsStream("map/"+text);
+	}	
 }
