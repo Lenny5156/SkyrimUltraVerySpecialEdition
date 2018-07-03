@@ -91,7 +91,7 @@ public abstract class Basic {
 			}
 		}
 	}
-	
+	// Filehandling ---------------------------------------
 	
 	//Gives back the string of an inputstream
 	public String getStringFromStream(InputStream is) {
@@ -112,6 +112,8 @@ public abstract class Basic {
 	public String getStringFromMap(String file) {
 		return getStringFromStream(FileHandler.getMap(file));
 	}
+	
+	//---------------------------------------------------
 	
 	/* Outputs a text (Must be singleline) in a frame
 	 * |----|
