@@ -8,6 +8,7 @@ public class SkyrimUltraVerySpecialEdition {
 		if (args.length == 0) {
 			new MainMenu();
 		} else {
+			Basic.textSpeed = 0;
 			new Game();
 		}
 		

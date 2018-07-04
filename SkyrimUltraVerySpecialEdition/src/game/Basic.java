@@ -11,7 +11,7 @@ public abstract class Basic {
 	public Scanner input = new Scanner(System.in);
 
 	// Speed in which doSimpleDialog show each char
-	static int textSpeed;// 45 is a good value
+	static int textSpeed = 45;
 
 	// Lets the Programm wait for the @param time in milliseconds
 	public void wait(int time) {
@@ -27,7 +27,7 @@ public abstract class Basic {
 	// Function for an Output (We're just too lazy to write over and over
 	// System.out.println("...");
 	public void output(String message) {
-		System.out.println(message);
+		printCharForChar(message,textSpeed);
 	}
 
 	// Function for an Output NO newline
