@@ -4,7 +4,9 @@ import game.Basic;
 
 public class Conversation extends Basic {
 	/*
-	 * ID/TextOption/Option1/ID1/Text1/Option2/ID2/Text2
+	 * ID/TextOption/Option1/ID1/Text1/Option2/ID2/Text2%
+	 * % = new ConversationPoint
+	 * / = Seperates Conversations
 	 * To end the conversation make the Text2 to an number only
 	 */
 	public int simpleConversation(String textFile, int point) {
