@@ -19,11 +19,13 @@ public class Walking extends Basic{
 	public String[] walk(int currentPosition, String currentMap) {
 		clear();
 		String[] newPosition = new String[2];
-		String currentPoint[] = getStringFromMap("Test").split("%")[currentPosition].split("/");
+		String currentPoint[] = getStringFromMap(currentMap).split("%")[currentPosition].split("/");
 		doSimpleDialog(currentPoint[3].split(";"));
 		output("0. Open Inventory");
 		for (int i = 4; i < currentPoint.length; i+=3) {
-			output(Integer.toString(i/3)+". "+currentPoint[i]);
+			if (!currentPoint[i].replaceAll(" ", "").equals("")) {
+				output(Integer.toString(i/3)+". "+currentPoint[i]);
+			}
 		}
 		output("where do you go?");
 		int newPos = getInt();;
