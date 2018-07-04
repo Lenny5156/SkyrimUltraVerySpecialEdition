@@ -17,6 +17,7 @@ public class MainMenu extends Basic {
 
 	// Menu in which you can load or start a new game.
 	public MainMenu() {
+		bethesda();
 		output(getStringFromPicture("Logo"), 5);
 		String mainMenuOption = input.nextLine();
 		while (!mainMenuOption.equals("q")) {
