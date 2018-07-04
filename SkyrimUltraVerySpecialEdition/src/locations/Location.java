@@ -1,8 +1,8 @@
 package locations;
 
 public abstract class Location {
-	public static String locationName;
-	public static String area;
-	public static String map;
-	public static boolean discovered = false;
+	public String locationName;
+	public String area;
+	public String map;
+	public boolean discovered = false;
 }
