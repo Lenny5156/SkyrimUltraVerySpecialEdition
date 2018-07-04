@@ -8,6 +8,7 @@ public class Intro extends Basic {
 		switch(n) {
 		case 1:
 			output(getStringFromPicture("Skyrim"),2);
+			output(getStringFromPicture("other/Helgen"));
 			waitForInput();
 			doSimpleDialog(getStringFromText("quests/intro/Intro").split("@")[0].split(";"));
 			break;

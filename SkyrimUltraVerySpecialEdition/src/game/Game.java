@@ -1,6 +1,7 @@
 package game;
 
 import functions.RaceMenu;
+import functions.Walking;
 import player.Player;
 import quests.main.Intro;
 
@@ -15,6 +16,8 @@ public class Game extends Basic{
 		intro.introSequence(1,null,false);
 		player = new Player(raceM.createCharacter());
 		intro.introSequence(2,player.race,player.gender);
-		waitForInput();
+		while (true) {
+			player.mapPointID = new Walking().walk(player.mapPointID);
+		}
 	}
 }

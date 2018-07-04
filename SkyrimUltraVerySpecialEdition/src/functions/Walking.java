@@ -11,21 +11,22 @@ public class Walking extends Basic{
 	 * 	 *	; Diffrent Paragraphs
 	 *	/ Options
 	 *	% For new Point
-	 *	<Quicktravle true or false>/<Encounter ID>/false>/<Pathdescription ';' used for separate lines>/<1.Option>/<PunktID>/<2.Option>/<PunktID>% 
-	 *
+	 *	<Quicktravle true or false>/<Encounter ID>/<Pointdescription>/<1.Path description>/<1.PunktID>/<1.Walk description>/<2.Path description>/<2.PunktID>/<2<.Walk description>% 
+	 *	 ';' used for separate lines
 	 * @param return the new Point
 	 */
 	public int walk(int currentPosition) {
+		clear();
 		String currentPoint[] = getStringFromMap("Test").split("%")[currentPosition].split("/");
-		doSimpleDialog(currentPoint[2].split(";"));
+		doSimpleDialog(currentPoint[3].split(";"));
 		output("0. Open Inventory");
-		for (int i = 3; i < currentPoint.length; i+=3) {
+		for (int i = 4; i < currentPoint.length; i+=3) {
 			output(Integer.toString(i/3)+". "+currentPoint[i]);
 		}
 		output("where do you go?");
 		int newPos = getInt();;
-		while (newPos < 0 | newPos > (currentPoint.length-3)/3) {
-			output("Please enter a number between 0 and "+Integer.toString((currentPoint.length-3)/3));
+		while (newPos < 0 | newPos > (currentPoint.length-4)/3) {
+			output("Please enter a number between 0 and "+Integer.toString((currentPoint.length-4)/3));
 			newPos = getInt();
 		}
 		if (newPos == 0) {
@@ -33,8 +34,8 @@ public class Walking extends Basic{
 			return currentPosition;
 		}
 		else {
-			doSimpleDialog(currentPoint[newPos*3+2].split(";"));
-			return Integer.parseInt(currentPoint[newPos*3+1].replaceAll(" ",""));
+			doSimpleDialog(currentPoint[newPos*3+3].split(";"));
+			return Integer.parseInt(currentPoint[newPos*3+2].replaceAll(" ",""));
 		}
 	}
 	

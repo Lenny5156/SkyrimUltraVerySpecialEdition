@@ -8,6 +8,7 @@ import quests.Quest;
 public class Player extends Person {
 	
 	public int mapPointID = 0;
+	public String mapPart = "Test";
 	//Quest the player is "working" on
 	public ArrayList<Quest> quest = new ArrayList<>();
 	//Quest the player finished
