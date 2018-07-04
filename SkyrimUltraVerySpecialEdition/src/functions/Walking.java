@@ -18,12 +18,12 @@ public class Walking extends Basic{
 	 */
 	public String[] walk(int currentPosition, String currentMap) {
 		clear();
-		String[] newPosition = new String[2];
+		String[] returnPosition = new String[2];
 		String currentPoint[] = getStringFromMap(currentMap).split("%")[currentPosition].split("/");
 		doSimpleDialog(currentPoint[3].split(";"));
 		output("0. Open Inventory");
 		for (int i = 4; i < currentPoint.length; i+=3) {
-			if (!currentPoint[i].replaceAll(" ", "").equals("")) {
+		if (!currentPoint[i].replaceAll(" ", "").equals("")) {
 				output(Integer.toString(i/3)+". "+currentPoint[i]);
 			}
 		}
@@ -36,19 +36,21 @@ public class Walking extends Basic{
 		if (newPos == 0) {
 			output("You opened your Inventory \nit is empty");
 			waitForInput();
-			newPosition[0] = Integer.toString(currentPosition);
-			newPosition[1] = currentMap;
-			return newPosition;
+			returnPosition[0] = Integer.toString(currentPosition);
+			returnPosition[1] = currentMap;
+			return returnPosition;
 		}
 		else {
 			doSimpleDialog(currentPoint[newPos*3+3].split(";"));
 			waitForInput();
 			String[] newPoint = currentPoint[newPos*3+2].split(";");
-			newPosition[0] = newPoint[0].replaceAll(" ", "");
+			returnPosition[0] = newPoint[0].replaceAll(" ", "");
 			if (newPoint.length == 2) {
-				newPosition[1] = newPoint[1].replaceAll(" ", "");
+				returnPosition[1] = newPoint[1].replaceAll(" ", "");
+			}	else {
+				returnPosition[1] = currentMap;
 			}
-			return newPosition;
+			return returnPosition;
 		}
 	}
 	

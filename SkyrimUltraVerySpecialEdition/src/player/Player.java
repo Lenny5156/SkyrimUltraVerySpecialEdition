@@ -35,7 +35,7 @@ public class Player extends Person {
 		else gender = true;
 	}
 	
-	String mapPart = "Test";
+	String mapPart = "Helgen";
 	
 	public void walk() {
 		String[] newPos = new Walking().walk(mapPointID, mapPart);
