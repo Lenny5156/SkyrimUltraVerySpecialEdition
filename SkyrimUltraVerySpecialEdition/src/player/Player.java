@@ -2,13 +2,12 @@ package player;
 
 import java.util.ArrayList;
 
+import functions.Walking;
 import npc.Person;
 import quests.Quest;
 
 public class Player extends Person {
 	
-	public int mapPointID = 0;
-	public String mapPart = "Test";
 	//Quest the player is "working" on
 	public ArrayList<Quest> quest = new ArrayList<>();
 	//Quest the player finished
@@ -36,5 +35,12 @@ public class Player extends Person {
 		else gender = true;
 	}
 	
+	String mapPart = "Test";
+	
+	public void walk() {
+		String[] newPos = new Walking().walk(mapPointID, mapPart);
+		mapPointID = Integer.parseInt(newPos[0]);
+		mapPart = newPos[1];
+	}
 	
 }

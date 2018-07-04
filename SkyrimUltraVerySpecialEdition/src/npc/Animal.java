@@ -9,6 +9,9 @@ import spells.Spell;
 
 public abstract class Animal {
 	public String name;
+	//Variables for current position
+	public int mapPointID = 0;
+	public String mapPart = "Test";
 	//Arraylist for the inventory, spells, shouts and abilities.
 	public ArrayList<Item> inventory = new ArrayList<>();
 	public ArrayList<Spell> speels = new ArrayList<>();
@@ -35,5 +38,7 @@ public abstract class Animal {
 			level = max;
 		}
 	}
+	
+	
 	
 }

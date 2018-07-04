@@ -1,6 +1,7 @@
 package functions;
 
 import game.Basic;
+import player.Player;
 
 public class Walking extends Basic{
 	
@@ -15,8 +16,9 @@ public class Walking extends Basic{
 	 *	 ';' used for separate lines
 	 * @param return the new Point
 	 */
-	public int walk(int currentPosition) {
+	public String[] walk(int currentPosition, String currentMap) {
 		clear();
+		String[] newPosition = new String[2];
 		String currentPoint[] = getStringFromMap("Test").split("%")[currentPosition].split("/");
 		doSimpleDialog(currentPoint[3].split(";"));
 		output("0. Open Inventory");
@@ -31,11 +33,20 @@ public class Walking extends Basic{
 		}
 		if (newPos == 0) {
 			output("You opened your Inventory \nit is empty");
-			return currentPosition;
+			waitForInput();
+			newPosition[0] = Integer.toString(currentPosition);
+			newPosition[1] = currentMap;
+			return newPosition;
 		}
 		else {
 			doSimpleDialog(currentPoint[newPos*3+3].split(";"));
-			return Integer.parseInt(currentPoint[newPos*3+2].replaceAll(" ",""));
+			waitForInput();
+			String[] newPoint = currentPoint[newPos*3+2].split(";");
+			newPosition[0] = newPoint[0].replaceAll(" ", "");
+			if (newPoint.length == 2) {
+				newPosition[1] = newPoint[1].replaceAll(" ", "");
+			}
+			return newPosition;
 		}
 	}
 	

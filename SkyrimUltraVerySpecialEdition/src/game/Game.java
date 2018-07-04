@@ -17,7 +17,7 @@ public class Game extends Basic{
 		player = new Player(raceM.createCharacter());
 		intro.introSequence(2,player.race,player.gender);
 		while (true) {
-			player.mapPointID = new Walking().walk(player.mapPointID);
+			player.walk();
 		}
 	}
 }
