@@ -1,7 +1,6 @@
 package game;
 
 import functions.RaceMenu;
-import functions.Walking;
 import player.Player;
 import quests.main.Intro;
 

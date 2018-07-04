@@ -1,7 +1,6 @@
 package functions;
 
 import game.Basic;
-import player.Player;
 
 public class Walking extends Basic{
 	
@@ -9,10 +8,11 @@ public class Walking extends Basic{
 	/*
 	 * Method to walk
 	 * Fileexplanation:
-	 * 	 *	; Diffrent Paragraphs
+	 * 	 ; Diffrent Paragraphs
 	 *	/ Options
 	 *	% For new Point
-	 *	<Quicktravle true or false>/<Encounter ID>/<Pointdescription>/<1.Path description>/<1.PunktID>/<1.Walk description>/<2.Path description>/<2.PunktID>/<2<.Walk description>% 
+	 *	ID is only used to make it easier to know the points
+	 *	ID( + Additional description will not be shown)/Quicktravle true or false/Encounter ID/Pointdescription/1.Path description/1.PointID;NewFile/1.Walk description/2.Path description/2.PointID/2.Walk description% 
 	 *	 ';' used for separate lines
 	 * @param return the new Point
 	 */
