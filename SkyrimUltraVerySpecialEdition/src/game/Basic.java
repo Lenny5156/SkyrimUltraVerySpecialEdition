@@ -28,6 +28,7 @@ public abstract class Basic {
 	// System.out.println("...");
 	public void output(String message) {
 		printCharForChar(message,textSpeed);
+		System.out.println("");
 	}
 
 	// Function for an Output NO newline

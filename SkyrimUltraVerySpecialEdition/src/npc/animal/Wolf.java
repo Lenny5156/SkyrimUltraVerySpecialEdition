@@ -13,7 +13,9 @@ public class Wolf extends Animal {
 		unarmedDamage = 5;
 
 		// Inventory
-		inventory.add(new WolfPelt());
+		addItem(new WolfPelt(),1);
+		addItem(new WolfPelt(),10);
+		removeItem(new WolfPelt(),5);
 		if (Math.random() >= 0.1) {
 			// inventory.add(new) todo add gem
 		}
