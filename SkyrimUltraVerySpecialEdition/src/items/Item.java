@@ -7,4 +7,10 @@ public class Item {
 	public int value;
 	public boolean stolen;
 	public int quantity;
+	public int id;
+	
+	public void use() {
+		
+	}
+	
 }
