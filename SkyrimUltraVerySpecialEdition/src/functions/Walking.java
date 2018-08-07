@@ -2,7 +2,7 @@ package functions;
 
 import game.Basic;
 
-public class Walking extends Basic {
+public class Walking {
 
 	/*
 	 * Method to walk Fileexplanation: ; Diffrent Paragraphs / Options % For new
@@ -15,32 +15,32 @@ public class Walking extends Basic {
 	 * @param return the new Point
 	 */
 	public String[] walk(int currentPosition, String currentMap) {
-		clear();
+		Basic.clear();
 		String[] returnPosition = new String[2];
-		String currentPoint[] = getStringFromMap(currentMap).split("%")[currentPosition].split("/");
-		doSimpleDialog(currentPoint[3].split(";"));
-		output("0. Open Inventory");
+		String currentPoint[] = Basic.getStringFromMap(currentMap).split("%")[currentPosition].split("/");
+		Basic.doSimpleDialog(currentPoint[3].split(";"));
+		Basic.output("0. Open Inventory");
 		for (int i = 4; i < currentPoint.length; i += 3) {
 			if (!currentPoint[i].replaceAll(" ", "").equals("")) {
-				output(Integer.toString(i / 3) + ". " + currentPoint[i]);
+				Basic.output(Integer.toString(i / 3) + ". " + currentPoint[i]);
 			}
 		}
-		output("where do you go?");
-		int newPos = getInt();
+		Basic.output("where do you go?");
+		int newPos = Basic.getInt();
 		;
 		while (newPos < 0 | newPos > (currentPoint.length - 4) / 3) {
-			output("Please enter a number between 0 and " + Integer.toString((currentPoint.length - 4) / 3));
-			newPos = getInt();
+			Basic.output("Please enter a number between 0 and " + Integer.toString((currentPoint.length - 4) / 3));
+			newPos = Basic.getInt();
 		}
 		if (newPos == 0) {
-			output("You opened your Inventory \nit is empty");
-			waitForInput();
+			Basic.output("You opened your Inventory \nit is empty");
+			Basic.waitForInput();
 			returnPosition[0] = Integer.toString(currentPosition);
 			returnPosition[1] = currentMap;
 			return returnPosition;
 		} else {
-			doSimpleDialog(currentPoint[newPos * 3 + 3].split(";"));
-			waitForInput();
+			Basic.doSimpleDialog(currentPoint[newPos * 3 + 3].split(";"));
+			Basic.waitForInput();
 			String[] newPoint = currentPoint[newPos * 3 + 2].split(";");
 			returnPosition[0] = newPoint[0].replaceAll(" ", "");
 			if (newPoint.length == 2) {

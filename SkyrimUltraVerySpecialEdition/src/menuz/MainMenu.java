@@ -3,23 +3,23 @@ package menuz;
 import game.Basic;
 import game.Game;
 
-public class MainMenu extends Basic {
+public class MainMenu {
 
 	Game g;
 
 	// The Bethesdan't logo
 	private void bethesda() {
-		clear();
-		output(getStringFromPicture("Bethesda"), 2);
-		wait(3000);
-		clear();
+		Basic.clear();
+		Basic.output(Basic.getStringFromPicture("Bethesda"), 2);
+		Basic.wait(3000);
+		Basic.clear();
 	}
 
 	// Menu in which you can load or start a new game.
 	public MainMenu() {
 		bethesda();
-		output(getStringFromPicture("Logo"), 5);
-		String mainMenuOption = input.nextLine();
+		Basic.output(Basic.getStringFromPicture("Logo"), 5);
+		String mainMenuOption = Basic.input.nextLine();
 		while (!mainMenuOption.equals("q")) {
 			if (mainMenuOption.equals("c"))
 				showCredits();
@@ -29,12 +29,12 @@ public class MainMenu extends Basic {
 				newGame();
 			else if (mainMenuOption.equals("h"))
 				getHelp();
-			clear();
-			output(getStringFromPicture("Logo"), 5);
-			mainMenuOption = input.nextLine();
+			Basic.clear();
+			Basic.output(Basic.getStringFromPicture("Logo"), 5);
+			mainMenuOption = Basic.input.nextLine();
 		}
-		output("Bye");
-		wait(1000);
+		Basic.output("Bye");
+		Basic.wait(1000);
 	}
 
 	/*
@@ -43,34 +43,34 @@ public class MainMenu extends Basic {
 
 	// Starts a new game
 	private void newGame() {
-		clear();
+		Basic.clear();
 		g = new Game();
 	}
 
 	// Loads a game
 	private void loadGame() {
-		clear();
+		Basic.clear();
 		// TODO Load game
 	}
 
 	// Shows a short tutorial
 	private void getHelp() {
-		clear();
+		Basic.clear();
 		String help = "This is a Textadventure \n\n" + "You control the game just with the keyboard \n"
 				+ "Enter the optiono you want (letter of number) \n" + "and then enter to choose this option \n"
 				+ "That's all \n\n" + "We recommend some experience with Skyrim \n"
 				+ "This game is not completed yet and in a very early Alpha-Stage \n" + "We are sorry";
-		output(help);
-		waitForInput();
+		Basic.output(help);
+		Basic.waitForInput();
 	}
 
 	// Shows the developer
 	private void showCredits() {
-		clear();
+		Basic.clear();
 		String creditsText = "This game was developed by: \n" + "Lenny5156					 \n"
 				+ "MC2BP						 \n" + "							 \n"
 				+ "Thank you for playing this Game.";
-		output(creditsText);
-		waitForInput();
+		Basic.output(creditsText);
+		Basic.waitForInput();
 	}
 }

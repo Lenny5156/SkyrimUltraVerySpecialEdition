@@ -2,29 +2,29 @@ package quests.main;
 
 import game.Basic;
 
-public class Intro extends Basic {
+public class Intro {
 
 	public void introSequence(int n, String r, boolean g) {
 		switch (n) {
 		case 1:
-			output(getStringFromPicture("Skyrim"), 2);
-			waitForInput();
-			doSimpleDialog(getStringFromText("quests/intro/Intro").split("@")[0].split(";"));
+			Basic.output(Basic.getStringFromPicture("Skyrim"), 2);
+			Basic.waitForInput();
+			Basic.doSimpleDialog(Basic.getStringFromText("quests/intro/Intro").split("@")[0].split(";"));
 			break;
 		case 2:
-			output(getStringFromText("quests/intro/Intro" + r).split(";")[0]);
-			waitForInput();
+			Basic.output(Basic.getStringFromText("quests/intro/Intro" + r).split(";")[0]);
+			Basic.waitForInput();
 
 			if (g) {
-				doSimpleDialog(getStringFromText("quests/intro/IntroM").split(";"));
+				Basic.doSimpleDialog(Basic.getStringFromText("quests/intro/IntroM").split(";"));
 			} else {
-				doSimpleDialog(getStringFromText("quests/intro/IntroF").split(";"));
+				Basic.doSimpleDialog(Basic.getStringFromText("quests/intro/IntroF").split(";"));
 			}
-			waitForInput();
-			output(getStringFromText("quests/intro/Intro" + r).split(";")[1]);
-			doSimpleDialog((getStringFromText("quests/intro/Intro").split("@")[1]).split(";"));
-			output(getStringFromText("quests/intro/Intro" + r).split(";")[2]);
-			doSimpleDialog((getStringFromText("quests/intro/Intro").split("@")[2]).split(";"));
+			Basic.waitForInput();
+			Basic.output(Basic.getStringFromText("quests/intro/Intro" + r).split(";")[1]);
+			Basic.doSimpleDialog((Basic.getStringFromText("quests/intro/Intro").split("@")[1]).split(";"));
+			Basic.output(Basic.getStringFromText("quests/intro/Intro" + r).split(";")[2]);
+			Basic.doSimpleDialog((Basic.getStringFromText("quests/intro/Intro").split("@")[2]).split(";"));
 		}
 	}
 }

@@ -1,6 +1,9 @@
 package abilities;
 
-public abstract class Ability {
-	public int rechargeTime;
-	public boolean expires = false;
+import player.Player;
+
+public interface Ability {
+
+	public void use(Player player);
+	
 }

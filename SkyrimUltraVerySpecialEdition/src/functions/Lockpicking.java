@@ -2,7 +2,7 @@ package functions;
 
 import game.Basic;
 
-public class Lockpicking extends Basic {
+public class Lockpicking {
 
 	// Function for Lockpicken
 	// TODO include lockpicks
@@ -11,25 +11,25 @@ public class Lockpicking extends Basic {
 		for (int i = 0; i < length; i++) {
 			pw += Integer.toString((int) (Math.random() * max));
 		}
-		output(getStringFromPicture("other/lock"), 1);
-		output("Press h for help and q to quit");
-		output("The input must match the length of the code");
+		Basic.output(Basic.getStringFromPicture("other/lock"), 1);
+		Basic.output("Press h for help and q to quit");
+		Basic.output("The input must match the length of the code");
 		String output = "";
 		for (int i = 0; i < pw.length(); i++)
 			output += pw.toCharArray()[i];
-		output(output);
+		Basic.output(output);
 		String i;
 		while (true) {
-			output("");
-			i = input.next();
+			Basic.output("");
+			i = Basic.input.next();
 			while (i.length() != pw.length()) {
 				if (i.equals("q"))
 					return false;
 				else if (i.equals("h"))
 					showHelp();
 				else
-					output("incorrect input");
-				i = input.next();
+					Basic.output("incorrect input");
+				i = Basic.input.next();
 			}
 			if (outputNumbers(pw, i))
 				return true;
@@ -51,13 +51,13 @@ public class Lockpicking extends Basic {
 				returnValue = false;
 			}
 		}
-		output(output);
+		Basic.output(output);
 		return returnValue;
 	}
 
 	// Outputs help
 	private void showHelp() {
-		output("Explanation n/a");
+		Basic.output("Explanation n/a");
 	}
 
 }

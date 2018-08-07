@@ -4,7 +4,7 @@ import functions.RaceMenu;
 import player.Player;
 import quests.main.Intro;
 
-public class Game extends Basic {
+public class Game {
 
 	Player player;
 	Intro intro = new Intro();

@@ -6,15 +6,19 @@ import java.util.Scanner;
 
 import data.FileHandler;
 
-public abstract class Basic {
+public class Basic {
+	
+	private Basic() {
+		
+	}
 
-	public Scanner input = new Scanner(System.in);
+	public static Scanner input = new Scanner(System.in);
 
 	// Speed in which doSimpleDialog show each char
 	static int textSpeed = 45;
 
 	// Lets the Programm wait for the @param time in milliseconds
-	public void wait(int time) {
+	public static void wait(int time) {
 		try {
 			Thread.sleep(time);
 		} catch (InterruptedException e) {
@@ -26,18 +30,18 @@ public abstract class Basic {
 
 	// Function for an Output (We're just too lazy to write over and over
 	// System.out.println("...");
-	public void output(String message) {
+	public static void output(String message) {
 		printCharForChar(message,textSpeed);
 		System.out.println("");
 	}
 
 	// Function for an Output NO newline
-	public void simpleOutput(String message) {
+	public static void simpleOutput(String message) {
 		System.out.print(message);
 	}
 
 	// Function for an Output (Character for Character delay is in milliseconds)
-	public void printCharForChar(String message, int delay) {
+	public static void printCharForChar(String message, int delay) {
 		char[] text = message.toCharArray();
 		for (int i = 0; i < text.length; i++) {
 			System.out.print(text[i]);
@@ -47,18 +51,18 @@ public abstract class Basic {
 	}
 
 	// Function to output an string char for char. At the end comes a new line
-	public void output(String message, int delay) {
+	public static void output(String message, int delay) {
 		printCharForChar(message, delay);
 		System.out.println("");
 	}
 
 	// Waits for an enter
-	public void waitForInput() {
+	public static void waitForInput() {
 		input.nextLine();
 	}
 
 	// "clears" the console (in reality it just writes 100 empty lines)
-	public void clear() {
+	public static void clear() {
 		// for (int i = 0; i < 100; i++) System.out.println("\n");
 		try {
 			if (System.getProperty("os.name").contains("Windows"))
@@ -73,7 +77,7 @@ public abstract class Basic {
 	// Makes a simple Dialog
 	// The input is an StringArray and after one String is finished it waits for an
 	// enter
-	public void doSimpleDialog(String[] dialog) {
+	public static void doSimpleDialog(String[] dialog) {
 		for (int i = 0; i < dialog.length; i++) {
 			printCharForChar(dialog[i], textSpeed);
 			waitForInput();
@@ -82,7 +86,7 @@ public abstract class Basic {
 	}
 
 	// Returns an int
-	public int getInt() {
+	public static int getInt() {
 		String value;
 		while (true) {
 			value = input.next();
@@ -96,22 +100,23 @@ public abstract class Basic {
 	// Filehandling ---------------------------------------
 
 	// Gives back the string of an inputstream
-	public String getStringFromStream(InputStream is) {
+	@SuppressWarnings("resource")
+	public static String getStringFromStream(InputStream is) {
 		return new Scanner(is).useDelimiter("[^n\r]\n+").next();
 	}
 
 	// gives back the String from the file in the package data.pictures
-	public String getStringFromPicture(String file) {
+	public static String getStringFromPicture(String file) {
 		return getStringFromStream(FileHandler.getPicture(file));
 	}
 
 	// gives back the String from the file in the package data.text
-	public String getStringFromText(String file) {
+	public static String getStringFromText(String file) {
 		return getStringFromStream(FileHandler.getText(file));
 	}
 
 	// gives back the String from the file in the package data.map
-	public String getStringFromMap(String file) {
+	public static String getStringFromMap(String file) {
 		return getStringFromStream(FileHandler.getMap(file));
 	}
 
@@ -120,7 +125,7 @@ public abstract class Basic {
 	/*
 	 * Outputs a text (Must be singleline) in a frame |----| |Test| |----|
 	 */
-	public void outputStringInFrame(String text) {
+	public static void outputStringInFrame(String text) {
 		int length = text.length();
 		simpleOutput("|");
 		for (int i = 0; i < length; i++)

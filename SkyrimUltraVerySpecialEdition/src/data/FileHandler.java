@@ -3,6 +3,10 @@ package data;
 import java.io.InputStream;
 
 public class FileHandler {
+	
+	private FileHandler() {
+		
+	}
 	// This class is just used to store ASCII-Arts
 
 	// Gives back the inputstream of the file

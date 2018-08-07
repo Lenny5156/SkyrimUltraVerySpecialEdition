@@ -44,7 +44,7 @@ public abstract class Animal {
 	//removes an item from the inventory and gives back if its done
 	public boolean removeItem(Item item, int amount) {
 		for (Item i: inventory) {
-			if (i.item == item.item & i.quantity >= amount) {
+			if (i.equals(item) && i.quantity >= amount) {
 				i.quantity -= amount;
 				if (i.quantity <= 0) {
 					inventory.remove(i);
@@ -58,7 +58,7 @@ public abstract class Animal {
 	public Item getItem(Item item, int amount) {
 		Item returnItem = null;
 		for (Item i: inventory) {
-			if (i.item == item.item & i.quantity >= amount) {
+			if (i.equals(item) && i.quantity >= amount) {
 				returnItem = i;
 				returnItem.quantity = amount;
 				i.quantity -= amount;
@@ -73,7 +73,7 @@ public abstract class Animal {
 	//Add the item to the inventory
 	public void addItem(Item item, int amount) {
 		for (Item i: inventory) {
-			if (i.item == item.item) {
+			if (i.equals(item)) {
 				i.quantity += amount;
 				return;
 			}
